@@ -4,6 +4,7 @@ loguru
 matplotlib
 mkdocs
 notebook
+statsmodels
 numpy
 pandas
 pip
