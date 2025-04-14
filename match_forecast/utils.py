@@ -43,6 +43,7 @@ from scipy.stats import pearsonr, spearmanr
 # Data Preprocessing and Utility Functions
 # =============================================================================
 
+
 def replace_null_values(series: pd.Series) -> pd.Series:
     """
     Replace 'None' and 'Null' with np.nan in a Series.
@@ -75,7 +76,7 @@ def replace_outliers_zscore(series: pd.Series, z_threshold: float = 3.0) -> pd.S
     """
     if not pd.api.types.is_numeric_dtype(series):
         raise ValueError("The series must be numeric.")
-    
+
     z_scores = np.abs(stats.zscore(series, nan_policy="omit"))
     median_val = series.median()
     series_clean = series.copy()
@@ -89,7 +90,7 @@ def replace_outliers_iqr(series: pd.Series) -> pd.Series:
     """
     if not pd.api.types.is_numeric_dtype(series):
         raise ValueError("The series must be numeric.")
-    
+
     Q1, Q3 = series.quantile(0.25), series.quantile(0.75)
     IQR = Q3 - Q1
     lower, upper = Q1 - 1.5 * IQR, Q3 + 1.5 * IQR
@@ -99,25 +100,26 @@ def replace_outliers_iqr(series: pd.Series) -> pd.Series:
     return series_clean
 
 
-def impute_missing_values(series: pd.Series, method: Literal['mean', 'median', 'ffill', 'bfill']) -> pd.Series:
+def impute_missing_values(
+    series: pd.Series, method: Literal["mean", "median", "ffill", "bfill"]
+) -> pd.Series:
     """
     Impute missing values in a Series using the chosen method.
     """
-    if method == 'mean':
+    if method == "mean":
         if pd.api.types.is_numeric_dtype(series):
             return series.fillna(series.mean())
         else:
             raise ValueError("Mean imputation is applicable only for numeric series.")
-    elif method == 'median':
+    elif method == "median":
         if pd.api.types.is_numeric_dtype(series):
             return series.fillna(series.median())
         else:
             raise ValueError("Median imputation is applicable only for numeric series.")
-    elif method in ['ffill', 'bfill']:
+    elif method in ["ffill", "bfill"]:
         return series.fillna(method=method)
     else:
         raise ValueError("Invalid imputation method. Use 'mean', 'median', 'ffill' or 'bfill'.")
-
 
 
 # =============================================================================
@@ -129,13 +131,20 @@ def plot_frequency_pie_chart(df: pd.DataFrame, col: str, title: str) -> None:
     """
     counts = df[col].value_counts(normalize=True) * 100
     plt.figure(figsize=(8, 6))
-    plt.pie(counts.values, labels=counts.index, autopct="%1.1f%%", startangle=90,
-            wedgeprops={"linewidth": 1, "edgecolor": "black"})
+    plt.pie(
+        counts.values,
+        labels=counts.index,
+        autopct="%1.1f%%",
+        startangle=90,
+        wedgeprops={"linewidth": 1, "edgecolor": "black"},
+    )
     plt.title(title, fontsize=16)
     plt.show()
 
 
-def plot_correlation_matrix(df: pd.DataFrame, title: str, method: Literal['pearson', 'kendall', 'spearman'] = 'pearson') -> None:
+def plot_correlation_matrix(
+    df: pd.DataFrame, title: str, method: Literal["pearson", "kendall", "spearman"] = "pearson"
+) -> None:
     """
     Plot the correlation matrix for the DataFrame.
     """
@@ -146,7 +155,9 @@ def plot_correlation_matrix(df: pd.DataFrame, title: str, method: Literal['pears
     plt.show()
 
 
-def plot_univariate_analysis(df: pd.DataFrame, numeric_cols: List[str], categorical_cols: List[str]) -> None:
+def plot_univariate_analysis(
+    df: pd.DataFrame, numeric_cols: List[str], categorical_cols: List[str]
+) -> None:
     """
     Generate univariate plots: histograms for numeric features and bar plots for categorical features.
     """
@@ -155,7 +166,7 @@ def plot_univariate_analysis(df: pd.DataFrame, numeric_cols: List[str], categori
         sns.histplot(df[col].dropna(), kde=True)
         plt.title(f"Histogram of {col}")
         plt.show()
-    
+
     for col in categorical_cols:
         plt.figure(figsize=(10, 4))
         order = df[col].value_counts().index
@@ -173,14 +184,14 @@ def plot_bivariate_analysis(df: pd.DataFrame) -> None:
 
     # Numeric scatter plots with correlation info
     for i, col1 in enumerate(num_cols):
-        for col2 in num_cols[i + 1:]:
+        for col2 in num_cols[i + 1 :]:
             plt.figure(figsize=(6, 4))
             sns.scatterplot(x=df[col1], y=df[col2])
             plt.title(f"{col1} vs {col2}")
             plt.xlabel(col1)
             plt.ylabel(col2)
             plt.show()
-    
+
     # Numeric vs Categorical boxplots
     for cat in cat_cols:
         for num in num_cols:
@@ -205,14 +216,19 @@ def plot_ts(df: pd.DataFrame, time_col: str, cols: List[str]) -> None:
     plt.show()
 
 
-def plot_imputed_ts(df: pd.DataFrame, time_col: str, cols: List[str], method: Literal['mean', 'ffill', 'bfill'] = 'ffill') -> None:
+def plot_imputed_ts(
+    df: pd.DataFrame,
+    time_col: str,
+    cols: List[str],
+    method: Literal["mean", "ffill", "bfill"] = "ffill",
+) -> None:
     """
     Plot time series data for specified columns after imputing missing values using the given method.
     """
     df_copy = df.copy()
     plt.figure(figsize=(12, 6))
     for col in cols:
-        if method == 'mean' and pd.api.types.is_numeric_dtype(df_copy[col]):
+        if method == "mean" and pd.api.types.is_numeric_dtype(df_copy[col]):
             df_copy[col] = df_copy[col].fillna(df_copy[col].mean())
         else:
             df_copy[col] = df_copy[col].fillna(method=method)
@@ -229,12 +245,12 @@ def plot_imputed_ts(df: pd.DataFrame, time_col: str, cols: List[str], method: Li
 # Modeling and Evaluation Functions
 # =============================================================================
 def perform_cross_validation(
-    model, 
-    X_train: pd.DataFrame, 
-    y_train: pd.DataFrame, 
-    folds: int, 
+    model,
+    X_train: pd.DataFrame,
+    y_train: pd.DataFrame,
+    folds: int,
     scoring: str,
-    stratified: bool = False
+    stratified: bool = False,
 ) -> None:
     """
     Perform cross-validation using either KFold or StratifiedKFold and print the scores.
@@ -243,25 +259,31 @@ def perform_cross_validation(
         cv = StratifiedKFold(n_splits=folds, shuffle=True, random_state=42)
     else:
         cv = KFold(n_splits=folds, shuffle=True, random_state=42)
-    
+
     scores = cross_val_score(model, X_train, y_train, cv=cv, scoring=scoring)
-    
+
     print(f"Cross-validation {scoring} scores: {scores}")
     print(f"Mean {scoring}: {scores.mean():.4f}, Std: {scores.std():.4f}")
 
 
-def evaluate_model(model, X_test: pd.DataFrame, y_test: pd.DataFrame, title: str, model_type: Literal['classifier', 'regressor']) -> None:
+def evaluate_model(
+    model,
+    X_test: pd.DataFrame,
+    y_test: pd.DataFrame,
+    title: str,
+    model_type: Literal["classifier", "regressor"],
+) -> None:
     """
     Evaluate and print model metrics. For classifiers, display the confusion matrix.
     """
     y_pred = model.predict(X_test)
-    
+
     if model_type == "classifier":
         y_prob = model.predict_proba(X_test)[:, 1]
         auc_val = roc_auc_score(y_test, y_prob, multi_class="ovr")
         gini = 2 * auc_val - 1
         cm = confusion_matrix(y_test, y_pred)
-        
+
         plt.figure(figsize=(6, 4))
         sns.heatmap(cm, annot=True, fmt="d", cmap="coolwarm")
         plt.title(title, fontsize=16)
@@ -270,12 +292,12 @@ def evaluate_model(model, X_test: pd.DataFrame, y_test: pd.DataFrame, title: str
         plt.show()
     else:
         gini = 0
-    
+
     acc = accuracy_score(y_test, y_pred)
     prec = precision_score(y_test, y_pred, average="weighted")
     rec = recall_score(y_test, y_pred, average="weighted")
     f1 = f1_score(y_test, y_pred, average="weighted")
-    
+
     print("Model Performance:")
     print(f"Accuracy:   {acc:.4f}")
     print(f"Precision:  {prec:.4f}")
