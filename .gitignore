@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.env
+.venv/
+.venv*/
+*.log
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Data files (raw, interim, processed)
+data/raw/
+data/interim/
+data/processed/
+data/external/
+
+# Models and predictions
+models/
+*.pkl
+*.joblib
+*.h5
+*.onnx
+*.pt
+*.ckpt
+
+# Output reports
+reports/figures/
+*.pdf
+*.html
+
+# DVC / MLFlow / etc.
+.dvc/
+mlruns/
+.dvc/
+.dvcignore
+
+# mkdocs
+site/
+
+# OS system files
+.DS_Store
+Thumbs.db
+
+# Databases
+data/
