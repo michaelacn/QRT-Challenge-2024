@@ -46,9 +46,9 @@ from scipy.stats import pearsonr, spearmanr
 
 def replace_null_values(series: pd.Series) -> pd.Series:
     """
-    Replace 'None' and 'Null' with np.nan in a Series.
+    Replace 'None', 'Null', np.inf, and -np.inf with np.nan in a Series.
     """
-    return series.replace(["None", "Null"], np.nan)
+    return series.replace(["None", "Null", np.inf, -np.inf], np.nan)
 
 
 def plot_nan_heatmap(df: pd.DataFrame, title: str) -> None:
