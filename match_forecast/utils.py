@@ -66,8 +66,12 @@ def print_perc_nans(df: pd.DataFrame, threshold: float) -> None:
     Print column names with a percentage of NaN values above the threshold.
     """
     perc = df.isna().mean() * 100
-    for col, p in perc[perc > threshold].items():
-        print(f"{col}: {p:.2f}% missing")
+    filtered = perc[perc > threshold]
+    if filtered.empty:
+        print("No columns have a percentage of NaN values above the threshold.")
+    else:
+        for col, p in filtered.items():
+            print(f"{col}: {p:.2f}% missing")
 
 
 def replace_outliers_zscore(series: pd.Series, z_threshold: float = 3.0) -> pd.Series:
@@ -100,28 +104,6 @@ def replace_outliers_iqr(series: pd.Series) -> pd.Series:
     return series_clean
 
 
-def impute_missing_values(
-    series: pd.Series, method: Literal["mean", "median", "ffill", "bfill"]
-) -> pd.Series:
-    """
-    Impute missing values in a Series using the chosen method.
-    """
-    if method == "mean":
-        if pd.api.types.is_numeric_dtype(series):
-            return series.fillna(series.mean())
-        else:
-            raise ValueError("Mean imputation is applicable only for numeric series.")
-    elif method == "median":
-        if pd.api.types.is_numeric_dtype(series):
-            return series.fillna(series.median())
-        else:
-            raise ValueError("Median imputation is applicable only for numeric series.")
-    elif method in ["ffill", "bfill"]:
-        return series.fillna(method=method)
-    else:
-        raise ValueError("Invalid imputation method. Use 'mean', 'median', 'ffill' or 'bfill'.")
-
-
 # =============================================================================
 # Visualization Functions
 # =============================================================================
@@ -148,10 +130,12 @@ def plot_correlation_matrix(
     """
     Plot the correlation matrix for the DataFrame.
     """
-    plt.figure(figsize=(10, 8))
-    sns.heatmap(df.corr(method=method), annot=True, cmap="coolwarm", fmt=".2f")
-    plt.xticks(rotation=45)
+    plt.figure(figsize=(12, 10))
+    corr = df.corr(method=method)
+    ax = sns.heatmap(corr, annot=True, cmap="coolwarm", fmt=".2f")
+    plt.xticks(rotation=45, ha="right")
     plt.title(title, fontsize=18)
+    plt.tight_layout()
     plt.show()
 
 
@@ -160,11 +144,18 @@ def plot_univariate_analysis(
 ) -> None:
     """
     Generate univariate plots: histograms for numeric features and bar plots for categorical features.
-    """
+    """    
     for col in numeric_cols:
-        plt.figure(figsize=(10, 4))
+        plt.figure(figsize=(12, 4))
+        plt.subplot(1, 2, 1)
         sns.histplot(df[col].dropna(), kde=True)
         plt.title(f"Histogram of {col}")
+        
+        plt.subplot(1, 2, 2)
+        sns.boxplot(x=df[col])
+        plt.title(f"Boxplot of {col}")
+        
+        plt.tight_layout()
         plt.show()
 
     for col in categorical_cols:
