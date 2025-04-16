@@ -149,11 +149,11 @@ def plot_univariate_analysis(
         plt.figure(figsize=(12, 4))
         plt.subplot(1, 2, 1)
         sns.histplot(df[col].dropna(), kde=True)
-        plt.title(f"Histogram of {col}")
+        plt.title("Histogram")
         
         plt.subplot(1, 2, 2)
         sns.boxplot(x=df[col])
-        plt.title(f"Boxplot of {col}")
+        plt.title("Boxplot")
         
         plt.tight_layout()
         plt.show()
@@ -162,7 +162,7 @@ def plot_univariate_analysis(
         plt.figure(figsize=(10, 4))
         order = df[col].value_counts().index
         sns.countplot(y=df[col], order=order)
-        plt.title(f"Bar Chart of {col}")
+        plt.title("Bar Chart")
         plt.show()
 
 
