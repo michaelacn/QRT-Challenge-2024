@@ -296,3 +296,55 @@ def evaluate_model(
     print(f"F1 Score:   {f1:.4f}")
     if model_type == "classifier":
         print(f"Gini:       {gini:.4f}")
+
+
+def select_shap_features(model, X: pd.DataFrame, y: pd.Series,
+                             n_folds: int = 3, top_n: int = 400,
+                             random_state: int = 42) -> list:
+    """
+    Runs K-fold out-of-fold SHAP value computation and returns the top_n features
+    by average absolute SHAP importance across folds.
+    """
+    skf = StratifiedKFold(n_splits=n_folds, shuffle=True, random_state=random_state)
+    # accumulator for each feature's summed absolute-mean SHAP value
+    shap_accum = np.zeros(X.shape[1], dtype=float)
+
+    for train_idx, valid_idx in skf.split(X, y):
+        X_tr, X_val = X.iloc[train_idx], X.iloc[valid_idx]
+        y_tr = y.iloc[train_idx]
+        model.fit(X_tr, y_tr)
+
+        # explain the held-out fold
+        explainer = shap.TreeExplainer(model)
+        shap_vals = explainer.shap_values(X_val)
+
+        # compute mean absolute SHAP per feature
+        if isinstance(shap_vals, list):
+            # multiclass: average abs over samples, then classes
+            abs_means = np.mean(
+                [np.mean(np.abs(s), axis=0) for s in shap_vals],
+                axis=0
+            )
+        else:
+            # binary/regression
+            abs_means = np.mean(np.abs(shap_vals), axis=0)
+
+        shap_accum += abs_means
+
+    shap_avg = shap_accum / n_folds
+
+    feat_importance = pd.Series(shap_avg, index=X.columns)
+    top_features = feat_importance.sort_values(ascending=False).head(top_n).index.tolist()
+    return top_features
+
+
+def drop_highly_correlated_features(df, threshold=0.85):
+    """
+    Automatically drops one feature from each pair whose absolute correlation 
+    exceeds the specified threshold.
+    """
+    corr = df.corr().abs()
+    upper = corr.where(np.triu(np.ones(corr.shape), k=1).astype(bool))
+    to_drop = [col for col in upper.columns if any(upper[col] > threshold)]
+    
+    return df.drop(columns=to_drop), to_drop
