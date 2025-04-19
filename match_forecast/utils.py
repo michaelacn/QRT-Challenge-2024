@@ -298,53 +298,37 @@ def evaluate_model(
         print(f"Gini:       {gini:.4f}")
 
 
-def select_shap_features(model, X: pd.DataFrame, y: pd.Series,
-                             n_folds: int = 3, top_n: int = 400,
-                             random_state: int = 42) -> list:
+def keep_top_shap_features(X, y, model, shap_folds=3, n_keep=350):
     """
-    Runs K-fold out-of-fold SHAP value computation and returns the top_n features
-    by average absolute SHAP importance across folds.
+    Computes OOF mean-absolute SHAP importances for each feature and
+    retains only the top `n_keep` features by importance.
     """
-    skf = StratifiedKFold(n_splits=n_folds, shuffle=True, random_state=random_state)
-    # accumulator for each feature's summed absolute-mean SHAP value
+    skf = StratifiedKFold(n_splits=shap_folds, shuffle=True, random_state=42)
     shap_accum = np.zeros(X.shape[1], dtype=float)
+    cols = X.columns
 
+    # 1) OOF SHAP accumulation
     for train_idx, valid_idx in skf.split(X, y):
         X_tr, X_val = X.iloc[train_idx], X.iloc[valid_idx]
         y_tr = y.iloc[train_idx]
-        model.fit(X_tr, y_tr)
 
-        # explain the held-out fold
+        model.fit(X_tr, y_tr)
         explainer = shap.TreeExplainer(model)
         shap_vals = explainer.shap_values(X_val)
 
-        # compute mean absolute SHAP per feature
+        # multiclass vs binary/reg
         if isinstance(shap_vals, list):
-            # multiclass: average abs over samples, then classes
-            abs_means = np.mean(
-                [np.mean(np.abs(s), axis=0) for s in shap_vals],
-                axis=0
-            )
+            abs_means = np.mean([np.mean(np.abs(s), axis=0) for s in shap_vals], axis=0)
         else:
-            # binary/regression
             abs_means = np.mean(np.abs(shap_vals), axis=0)
 
         shap_accum += abs_means
 
-    shap_avg = shap_accum / n_folds
+    shap_avg = shap_accum / shap_folds
+    shap_imp = pd.Series(shap_avg, index=cols).sort_values(ascending=False)
 
-    feat_importance = pd.Series(shap_avg, index=X.columns)
-    top_features = feat_importance.sort_values(ascending=False).head(top_n).index.tolist()
-    return top_features
+    # 2) Keep top `n_keep` features
+    retained = shap_imp.index[:n_keep].tolist()
+    dropped = set(cols) - set(retained)
 
-
-def drop_highly_correlated_features(df, threshold=0.85):
-    """
-    Automatically drops one feature from each pair whose absolute correlation 
-    exceeds the specified threshold.
-    """
-    corr = df.corr().abs()
-    upper = corr.where(np.triu(np.ones(corr.shape), k=1).astype(bool))
-    to_drop = [col for col in upper.columns if any(upper[col] > threshold)]
-    
-    return df.drop(columns=to_drop), to_drop
+    return retained, dropped

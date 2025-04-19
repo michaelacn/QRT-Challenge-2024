@@ -1,562 +1,1042 @@
 [
     {
-        "loss": 0.5385077422855911,
+        "loss": 0.5452147805918779,
         "status": "ok",
         "params": {
             "auto_class_weights": 1,
-            "bagging_temperature": 0.296362882042597,
-            "border_count": 96.0,
-            "depth": 8.0,
-            "grow_policy": 2,
-            "iterations": 1700.0,
-            "l2_leaf_reg": 3.121291804839555,
-            "learning_rate": 0.0883137446277447,
-            "random_strength": 0.5726411042026713,
-            "rsm": 0.592142070033423
-        }
-    },
-    {
-        "loss": 0.5535458837901392,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.021109032645435066,
-            "border_count": 224.0,
-            "depth": 6.0,
-            "grow_policy": 1,
-            "iterations": 1050.0,
-            "l2_leaf_reg": 3.5079492633645306,
-            "learning_rate": 0.28761429359814555,
-            "random_strength": 9.340108911216024,
-            "rsm": 0.20426636119333708
-        }
-    },
-    {
-        "loss": 0.5065022685429537,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.6351176760070729,
-            "border_count": 224.0,
-            "depth": 9.0,
-            "grow_policy": 2,
-            "iterations": 600.0,
-            "l2_leaf_reg": 5.65422980217677,
-            "learning_rate": 0.013006578061191957,
-            "random_strength": 3.006027587804101,
-            "rsm": 0.5800218774219712
-        }
-    },
-    {
-        "loss": 0.5367807194911327,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.840877679401164,
+            "bagging_temperature": 0.6429890564664987,
             "border_count": 32.0,
             "depth": 6.0,
-            "grow_policy": 1,
-            "iterations": 450.0,
-            "l2_leaf_reg": 9.306018619500602,
-            "learning_rate": 0.022426288729646526,
-            "random_strength": 5.403317361014139,
-            "rsm": 0.5779041822752735
+            "grow_policy": 2,
+            "iterations": 300.0,
+            "l2_leaf_reg": 4.21253005081626,
+            "learning_rate": 0.18403666128049492,
+            "random_strength": 3.4119778618883503,
+            "rsm": 0.44970597083628283
         }
     },
     {
-        "loss": 0.513818722231721,
+        "loss": 0.5311920010010829,
         "status": "ok",
         "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.626650904116772,
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.657660987862681,
+            "border_count": 224.0,
+            "depth": 10.0,
+            "grow_policy": 2,
+            "iterations": 1950.0,
+            "l2_leaf_reg": 9.504947541927809,
+            "learning_rate": 0.03982963710027148,
+            "random_strength": 3.0310706935211904,
+            "rsm": 0.4963514433708842
+        }
+    },
+    {
+        "loss": 0.5315999608487398,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.2980301312172918,
             "border_count": 192.0,
-            "depth": 8.0,
-            "grow_policy": 0,
-            "iterations": 1050.0,
-            "l2_leaf_reg": 5.09311033411682,
-            "learning_rate": 0.04339325922068455,
-            "random_strength": 2.3940601326574127,
-            "rsm": 0.32392246268967495
-        }
-    },
-    {
-        "loss": 0.5350533250074958,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.9961899651879743,
-            "border_count": 224.0,
-            "depth": 5.0,
-            "grow_policy": 1,
-            "iterations": 1550.0,
-            "l2_leaf_reg": 2.189317225491334,
-            "learning_rate": 0.022965921039369046,
-            "random_strength": 3.7107271176057766,
-            "rsm": 0.6836279526317659
-        }
-    },
-    {
-        "loss": 0.5240802551274522,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.5660772639165933,
-            "border_count": 160.0,
-            "depth": 8.0,
-            "grow_policy": 1,
-            "iterations": 1500.0,
-            "l2_leaf_reg": 1.2073307322154085,
-            "learning_rate": 0.03600952004467371,
-            "random_strength": 7.429204582278851,
-            "rsm": 0.6400479811638744
-        }
-    },
-    {
-        "loss": 0.5343430269871123,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.6462875783341401,
-            "border_count": 32.0,
-            "depth": 8.0,
-            "grow_policy": 1,
-            "iterations": 1450.0,
-            "l2_leaf_reg": 7.346446961777366,
-            "learning_rate": 0.09868994106077059,
-            "random_strength": 0.4624100710972312,
-            "rsm": 0.42678162187661406
-        }
-    },
-    {
-        "loss": 0.5436903593738771,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.4446489399804634,
-            "border_count": 128.0,
-            "depth": 4.0,
-            "grow_policy": 1,
-            "iterations": 1750.0,
-            "l2_leaf_reg": 1.4488291169186676,
-            "learning_rate": 0.025267596518603993,
-            "random_strength": 4.677078084450946,
-            "rsm": 0.3563282346088028
-        }
-    },
-    {
-        "loss": 0.5411495850709802,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.7000043232157549,
-            "border_count": 64.0,
-            "depth": 5.0,
+            "depth": 7.0,
             "grow_policy": 2,
-            "iterations": 150.0,
-            "l2_leaf_reg": 8.220785861571825,
-            "learning_rate": 0.025001872674481302,
-            "random_strength": 1.1362162481944393,
-            "rsm": 0.24133884648148363
+            "iterations": 1600.0,
+            "l2_leaf_reg": 6.877295950553368,
+            "learning_rate": 0.07764177379762635,
+            "random_strength": 8.506371460976606,
+            "rsm": 0.6818128105671633
         }
     },
     {
-        "loss": 0.5378986366440928,
+        "loss": 0.5428772892955995,
         "status": "ok",
         "params": {
             "auto_class_weights": 1,
-            "bagging_temperature": 0.1925482995922143,
-            "border_count": 128.0,
-            "depth": 6.0,
-            "grow_policy": 1,
-            "iterations": 2000.0,
-            "l2_leaf_reg": 4.583426218578758,
-            "learning_rate": 0.01604554535070925,
-            "random_strength": 0.5122798937260797,
-            "rsm": 0.6477908029281885
+            "bagging_temperature": 0.6193487977172949,
+            "border_count": 32.0,
+            "depth": 4.0,
+            "grow_policy": 2,
+            "iterations": 1000.0,
+            "l2_leaf_reg": 8.027351004527487,
+            "learning_rate": 0.04651995374884233,
+            "random_strength": 9.326740919507658,
+            "rsm": 0.36948508112847356
         }
     },
     {
-        "loss": 0.5320055666649322,
+        "loss": 0.5355616099592877,
         "status": "ok",
         "params": {
             "auto_class_weights": 1,
-            "bagging_temperature": 0.8131726623748599,
+            "bagging_temperature": 0.9617873314616906,
             "border_count": 96.0,
-            "depth": 9.0,
-            "grow_policy": 1,
-            "iterations": 450.0,
-            "l2_leaf_reg": 9.079464759035323,
-            "learning_rate": 0.20369494735024754,
-            "random_strength": 1.273454338385439,
-            "rsm": 0.7275064701576586
+            "depth": 7.0,
+            "grow_policy": 0,
+            "iterations": 900.0,
+            "l2_leaf_reg": 2.918260734074212,
+            "learning_rate": 0.014994380970581042,
+            "random_strength": 3.6752026328305165,
+            "rsm": 0.6765890249146449
         }
     },
     {
-        "loss": 0.5353579242893922,
+        "loss": 0.5419632746312224,
         "status": "ok",
         "params": {
             "auto_class_weights": 1,
-            "bagging_temperature": 0.3043185796948217,
+            "bagging_temperature": 0.18048256917319283,
+            "border_count": 224.0,
+            "depth": 3.0,
+            "grow_policy": 0,
+            "iterations": 1200.0,
+            "l2_leaf_reg": 8.840486396759147,
+            "learning_rate": 0.029513803439979516,
+            "random_strength": 1.2706713628952115,
+            "rsm": 0.3464850879055225
+        }
+    },
+    {
+        "loss": 0.5312944942920932,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.628203512250095,
             "border_count": 128.0,
+            "depth": 9.0,
+            "grow_policy": 2,
+            "iterations": 1150.0,
+            "l2_leaf_reg": 9.915607630348664,
+            "learning_rate": 0.09171349778198286,
+            "random_strength": 7.4148805821397445,
+            "rsm": 0.39598303051930867
+        }
+    },
+    {
+        "loss": 0.5071116219772378,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.22127907170353733,
+            "border_count": 96.0,
+            "depth": 8.0,
+            "grow_policy": 2,
+            "iterations": 1650.0,
+            "l2_leaf_reg": 2.681642424000737,
+            "learning_rate": 0.016682121084876333,
+            "random_strength": 4.498998411610893,
+            "rsm": 0.6820219186553349
+        }
+    },
+    {
+        "loss": 0.5017266201311814,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.6327524844905796,
+            "border_count": 224.0,
+            "depth": 10.0,
+            "grow_policy": 2,
+            "iterations": 850.0,
+            "l2_leaf_reg": 3.076382444714061,
+            "learning_rate": 0.010043183230469712,
+            "random_strength": 2.704417099891303,
+            "rsm": 0.6604736637774644
+        }
+    },
+    {
+        "loss": 0.5444007503165553,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.3424769201311191,
+            "border_count": 96.0,
             "depth": 4.0,
             "grow_policy": 0,
-            "iterations": 550.0,
-            "l2_leaf_reg": 6.26125975770603,
-            "learning_rate": 0.013770975420808853,
-            "random_strength": 4.481015366994351,
-            "rsm": 0.43399467728163127
+            "iterations": 1500.0,
+            "l2_leaf_reg": 7.766114256772983,
+            "learning_rate": 0.023070026158629263,
+            "random_strength": 2.088864247977785,
+            "rsm": 0.747805036845004
         }
     },
     {
-        "loss": 0.542470816204657,
+        "loss": 0.5358668287231485,
         "status": "ok",
         "params": {
             "auto_class_weights": 1,
-            "bagging_temperature": 0.4738206404289498,
+            "bagging_temperature": 0.20898185137989878,
+            "border_count": 64.0,
+            "depth": 7.0,
+            "grow_policy": 0,
+            "iterations": 1650.0,
+            "l2_leaf_reg": 5.0842197311126744,
+            "learning_rate": 0.12220152372770779,
+            "random_strength": 3.520196881977232,
+            "rsm": 0.3470479899504917
+        }
+    },
+    {
+        "loss": 0.5389148038843996,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.5068631118562291,
+            "border_count": 32.0,
+            "depth": 6.0,
+            "grow_policy": 2,
+            "iterations": 850.0,
+            "l2_leaf_reg": 4.648295096879916,
+            "learning_rate": 0.048061961765480596,
+            "random_strength": 8.73478273808255,
+            "rsm": 0.3452276388143251
+        }
+    },
+    {
+        "loss": 0.5340375914045639,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.94525441008097,
+            "border_count": 128.0,
+            "depth": 9.0,
+            "grow_policy": 1,
+            "iterations": 500.0,
+            "l2_leaf_reg": 3.0715146472411656,
+            "learning_rate": 0.0134732812625799,
+            "random_strength": 3.7366245362740456,
+            "rsm": 0.5177728164336481
+        }
+    },
+    {
+        "loss": 0.5319046840270292,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.9530008214405357,
+            "border_count": 96.0,
+            "depth": 7.0,
+            "grow_policy": 1,
+            "iterations": 850.0,
+            "l2_leaf_reg": 6.527396080450174,
+            "learning_rate": 0.16611853752141267,
+            "random_strength": 7.230104525410469,
+            "rsm": 0.4148328545866812
+        }
+    },
+    {
+        "loss": 0.5453159729707628,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.3421077023401239,
             "border_count": 224.0,
             "depth": 5.0,
-            "grow_policy": 1,
-            "iterations": 1050.0,
-            "l2_leaf_reg": 7.224149745456873,
-            "learning_rate": 0.049123348885750484,
-            "random_strength": 6.707133641132488,
-            "rsm": 0.6611431723205152
+            "grow_policy": 2,
+            "iterations": 500.0,
+            "l2_leaf_reg": 2.213910366869118,
+            "learning_rate": 0.07531579221698854,
+            "random_strength": 4.343199090627758,
+            "rsm": 0.22404847775470774
         }
     },
     {
-        "loss": 0.5354597051761434,
+        "loss": 0.5436905761925648,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.7310890382025442,
-            "border_count": 128.0,
+            "bagging_temperature": 0.9332345405536449,
+            "border_count": 64.0,
+            "depth": 4.0,
+            "grow_policy": 1,
+            "iterations": 1650.0,
+            "l2_leaf_reg": 9.430465292020061,
+            "learning_rate": 0.28607217650439454,
+            "random_strength": 0.4385888942409355,
+            "rsm": 0.4372473047033968
+        }
+    },
+    {
+        "loss": 0.5242846532016066,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.6458522539973005,
+            "border_count": 224.0,
             "depth": 8.0,
             "grow_policy": 1,
-            "iterations": 150.0,
-            "l2_leaf_reg": 2.4375938802350765,
-            "learning_rate": 0.27322030263853964,
-            "random_strength": 2.9610163789543953,
-            "rsm": 0.46068506139107124
+            "iterations": 1600.0,
+            "l2_leaf_reg": 5.143363268112864,
+            "learning_rate": 0.053090488638660505,
+            "random_strength": 3.1300477737022927,
+            "rsm": 0.6506168267041501
         }
     },
     {
-        "loss": 0.5235728684245087,
+        "loss": 0.5269263411165048,
         "status": "ok",
         "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.6475813843160949,
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.20563169304492113,
             "border_count": 64.0,
-            "depth": 9.0,
-            "grow_policy": 2,
-            "iterations": 1750.0,
-            "l2_leaf_reg": 5.363454526653036,
-            "learning_rate": 0.07706904606433496,
-            "random_strength": 0.12298857122066242,
-            "rsm": 0.6156124177576294
+            "depth": 10.0,
+            "grow_policy": 1,
+            "iterations": 1950.0,
+            "l2_leaf_reg": 8.692246444750209,
+            "learning_rate": 0.13218518438761437,
+            "random_strength": 4.247103956399143,
+            "rsm": 0.6831667556414027
         }
     },
     {
-        "loss": 0.5413535495077597,
+        "loss": 0.5484661007079439,
         "status": "ok",
         "params": {
             "auto_class_weights": 1,
-            "bagging_temperature": 0.4486965726874452,
-            "border_count": 160.0,
-            "depth": 5.0,
-            "grow_policy": 2,
-            "iterations": 1250.0,
-            "l2_leaf_reg": 8.897849761320657,
-            "learning_rate": 0.018596744301297482,
-            "random_strength": 2.0972303590442607,
-            "rsm": 0.2316708369743738
-        }
-    },
-    {
-        "loss": 0.5430806032763162,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.5499401785537652,
-            "border_count": 32.0,
+            "bagging_temperature": 0.03941203566038165,
+            "border_count": 96.0,
             "depth": 4.0,
             "grow_policy": 0,
             "iterations": 1950.0,
-            "l2_leaf_reg": 7.1900131532099385,
-            "learning_rate": 0.09193244139780637,
-            "random_strength": 5.97004691617816,
-            "rsm": 0.41721664324809216
+            "l2_leaf_reg": 5.300348310046198,
+            "learning_rate": 0.07544916066676116,
+            "random_strength": 4.2690666960547885,
+            "rsm": 0.4786836072103972
         }
     },
     {
-        "loss": 0.5334274945919224,
+        "loss": 0.5346475952949106,
         "status": "ok",
         "params": {
             "auto_class_weights": 1,
-            "bagging_temperature": 0.13834743384071846,
-            "border_count": 32.0,
-            "depth": 8.0,
-            "grow_policy": 1,
-            "iterations": 2000.0,
-            "l2_leaf_reg": 6.030426230496552,
-            "learning_rate": 0.044410879060407804,
-            "random_strength": 7.542648282288767,
-            "rsm": 0.6618146603463486
-        }
-    },
-    {
-        "loss": 0.5441986443256692,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.517782118495166,
-            "border_count": 64.0,
-            "depth": 7.0,
-            "grow_policy": 0,
-            "iterations": 700.0,
-            "l2_leaf_reg": 4.5623762106966925,
-            "learning_rate": 0.2598661362863271,
-            "random_strength": 6.425040559972285,
-            "rsm": 0.4661583952036461
-        }
-    },
-    {
-        "loss": 0.5042669607967034,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.9714852238223521,
-            "border_count": 256.0,
-            "depth": 10.0,
-            "grow_policy": 0,
-            "iterations": 800.0,
-            "l2_leaf_reg": 4.053560644884867,
-            "learning_rate": 0.01007807450760441,
-            "random_strength": 3.2117981970159764,
-            "rsm": 0.794342136550505
-        }
-    },
-    {
-        "loss": 0.5035559503720608,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.8962482494151074,
+            "bagging_temperature": 0.2683924637379337,
             "border_count": 192.0,
+            "depth": 6.0,
+            "grow_policy": 1,
+            "iterations": 1850.0,
+            "l2_leaf_reg": 6.939896120233778,
+            "learning_rate": 0.08957810967557858,
+            "random_strength": 5.719398929511289,
+            "rsm": 0.7496481310393817
+        }
+    },
+    {
+        "loss": 0.5111764767830549,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.02615122301499334,
+            "border_count": 160.0,
+            "depth": 9.0,
+            "grow_policy": 2,
+            "iterations": 1300.0,
+            "l2_leaf_reg": 1.2067497767626314,
+            "learning_rate": 0.019477774898927533,
+            "random_strength": 5.9058096494639445,
+            "rsm": 0.5563932603154211
+        }
+    },
+    {
+        "loss": 0.5043684629165706,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.7960138855060167,
+            "border_count": 256.0,
+            "depth": 8.0,
+            "grow_policy": 2,
+            "iterations": 600.0,
+            "l2_leaf_reg": 1.376440534494894,
+            "learning_rate": 0.012552234528785271,
+            "random_strength": 2.329204316047642,
+            "rsm": 0.7991203957772841
+        }
+    },
+    {
+        "loss": 0.5031492914365292,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.799384095851835,
+            "border_count": 256.0,
+            "depth": 8.0,
+            "grow_policy": 2,
+            "iterations": 650.0,
+            "l2_leaf_reg": 1.0807488599590505,
+            "learning_rate": 0.010119214112211323,
+            "random_strength": 0.1351519532678469,
+            "rsm": 0.7958805939548256
+        }
+    },
+    {
+        "loss": 0.5051815329948484,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.8106639884184592,
+            "border_count": 256.0,
             "depth": 10.0,
             "grow_policy": 2,
-            "iterations": 800.0,
-            "l2_leaf_reg": 4.014429061639406,
-            "learning_rate": 0.01024933786252927,
-            "random_strength": 3.5920558650164462,
-            "rsm": 0.7940583454624772
+            "iterations": 150.0,
+            "l2_leaf_reg": 3.8857721562950527,
+            "learning_rate": 0.010283285834643018,
+            "random_strength": 0.19396630221297592,
+            "rsm": 0.595899372522031
         }
     },
     {
-        "loss": 0.5052830351147157,
+        "loss": 0.5039617420328424,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.9923754334928651,
-            "border_count": 256.0,
-            "depth": 10.0,
-            "grow_policy": 0,
-            "iterations": 800.0,
-            "l2_leaf_reg": 3.9527029770099085,
-            "learning_rate": 0.010367763642805153,
-            "random_strength": 3.908975453638782,
-            "rsm": 0.7998939552800107
-        }
-    },
-    {
-        "loss": 0.5032511032973785,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.9020519325555431,
+            "bagging_temperature": 0.7932193495467614,
             "border_count": 256.0,
             "depth": 9.0,
             "grow_policy": 2,
-            "iterations": 850.0,
-            "l2_leaf_reg": 2.744192955128727,
-            "learning_rate": 0.010227686260502161,
-            "random_strength": 1.8826120961313946,
-            "rsm": 0.7839038710996233
+            "iterations": 700.0,
+            "l2_leaf_reg": 1.7950411969745161,
+            "learning_rate": 0.011110320001187723,
+            "random_strength": 1.1954024514614625,
+            "rsm": 0.7895771849986175
         }
     },
     {
-        "loss": 0.5052829731665192,
+        "loss": 0.5039623924889052,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.8653668842753701,
+            "bagging_temperature": 0.5415007370355233,
             "border_count": 192.0,
+            "depth": 8.0,
+            "grow_policy": 2,
+            "iterations": 350.0,
+            "l2_leaf_reg": 3.5840452388149426,
+            "learning_rate": 0.027183131702156103,
+            "random_strength": 1.1054005648822844,
+            "rsm": 0.7421178645712825
+        }
+    },
+    {
+        "loss": 0.5031489197473504,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.7279804183048263,
+            "border_count": 160.0,
             "depth": 10.0,
             "grow_policy": 2,
-            "iterations": 1250.0,
-            "l2_leaf_reg": 2.563620582920233,
-            "learning_rate": 0.012683785185865836,
-            "random_strength": 1.9097186911807087,
-            "rsm": 0.7418295184518069
+            "iterations": 700.0,
+            "l2_leaf_reg": 1.0543603002443644,
+            "learning_rate": 0.010020802409383002,
+            "random_strength": 2.236585850713917,
+            "rsm": 0.6135063337976528
         }
     },
     {
-        "loss": 0.5048765620237732,
+        "loss": 0.5056892913869706,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.9166523063373747,
-            "border_count": 192.0,
+            "bagging_temperature": 0.45957426774468846,
+            "border_count": 160.0,
+            "depth": 10.0,
+            "grow_policy": 2,
+            "iterations": 100.0,
+            "l2_leaf_reg": 2.134308287861944,
+            "learning_rate": 0.03325727664824888,
+            "random_strength": 2.2212976811725444,
+            "rsm": 0.6001653983536763
+        }
+    },
+    {
+        "loss": 0.5032507316082,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.7287615631422744,
+            "border_count": 160.0,
             "depth": 9.0,
             "grow_policy": 2,
             "iterations": 300.0,
-            "l2_leaf_reg": 2.0584855704815657,
-            "learning_rate": 0.030275670328343593,
-            "random_strength": 5.3003436779617426,
-            "rsm": 0.5201240023473117
+            "l2_leaf_reg": 4.289554864282094,
+            "learning_rate": 0.02076254848764357,
+            "random_strength": 2.617209244576154,
+            "rsm": 0.616806515923222
         }
     },
     {
-        "loss": 0.5249950441442848,
+        "loss": 0.5323106925064984,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.7566880828591359,
-            "border_count": 256.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 900.0,
-            "l2_leaf_reg": 3.1334290782274286,
-            "learning_rate": 0.13602956902073074,
-            "random_strength": 1.6780535609431224,
-            "rsm": 0.7527271404238356
-        }
-    },
-    {
-        "loss": 0.5061973285459767,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.9243496655345437,
+            "bagging_temperature": 0.4350438927961769,
             "border_count": 192.0,
-            "depth": 7.0,
-            "grow_policy": 2,
-            "iterations": 1250.0,
-            "l2_leaf_reg": 1.0313410876114433,
-            "learning_rate": 0.010326475745113932,
-            "random_strength": 3.647869398456884,
-            "rsm": 0.7957234770702188
-        }
-    },
-    {
-        "loss": 0.514935679187636,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.38109275702882484,
-            "border_count": 160.0,
-            "depth": 9.0,
-            "grow_policy": 2,
-            "iterations": 950.0,
-            "l2_leaf_reg": 3.0661760286209425,
-            "learning_rate": 0.06471169489211365,
-            "random_strength": 2.5055616590524945,
-            "rsm": 0.5430414710640386
-        }
-    },
-    {
-        "loss": 0.5052831280370103,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.9032491505123188,
-            "border_count": 256.0,
-            "depth": 7.0,
-            "grow_policy": 2,
-            "iterations": 350.0,
-            "l2_leaf_reg": 4.642039548667221,
-            "learning_rate": 0.01683041453780404,
-            "random_strength": 4.305898081833849,
-            "rsm": 0.7075527836097092
-        }
-    },
-    {
-        "loss": 0.5049783119364262,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.7903421857127807,
-            "border_count": 224.0,
             "depth": 10.0,
             "grow_policy": 2,
-            "iterations": 1150.0,
-            "l2_leaf_reg": 3.51536345874094,
-            "learning_rate": 0.018739899562134198,
-            "random_strength": 1.2275983951832474,
-            "rsm": 0.7682017939336632
+            "iterations": 1400.0,
+            "l2_leaf_reg": 3.4120169774509437,
+            "learning_rate": 0.2883837253047272,
+            "random_strength": 5.221242623068241,
+            "rsm": 0.5490291502847954
         }
     },
     {
-        "loss": 0.5076200308254226,
+        "loss": 0.5032512581678696,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.06643481397654044,
+            "bagging_temperature": 0.8815789332298418,
+            "border_count": 128.0,
+            "depth": 5.0,
+            "grow_policy": 2,
+            "iterations": 1050.0,
+            "l2_leaf_reg": 1.7233863540910526,
+            "learning_rate": 0.01630556349567928,
+            "random_strength": 1.7322976888387478,
+            "rsm": 0.6339331787164836
+        }
+    },
+    {
+        "loss": 0.5050800928231776,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.7281338165609255,
             "border_count": 224.0,
             "depth": 9.0,
             "grow_policy": 2,
-            "iterations": 650.0,
-            "l2_leaf_reg": 1.7108743492062835,
-            "learning_rate": 0.03369721467659391,
-            "random_strength": 8.53103446844739,
-            "rsm": 0.7134157545665408
+            "iterations": 750.0,
+            "l2_leaf_reg": 6.197220274664639,
+            "learning_rate": 0.03549970900859033,
+            "random_strength": 0.7571039485932864,
+            "rsm": 0.28518113979415727
         }
     },
     {
-        "loss": 0.5045716220267964,
+        "loss": 0.5043683080460795,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.6997046964998932,
+            "bagging_temperature": 0.5679129571101414,
+            "border_count": 160.0,
+            "depth": 10.0,
+            "grow_policy": 2,
+            "iterations": 400.0,
+            "l2_leaf_reg": 2.4342364379456756,
+            "learning_rate": 0.023398148592322334,
+            "random_strength": 2.8614373604719554,
+            "rsm": 0.7244991345666708
+        }
+    },
+    {
+        "loss": 0.501117080852308,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.7013421449107848,
+            "border_count": 192.0,
+            "depth": 10.0,
+            "grow_policy": 0,
+            "iterations": 1000.0,
+            "l2_leaf_reg": 4.169437906630628,
+            "learning_rate": 0.011752143539013724,
+            "random_strength": 6.933215274346919,
+            "rsm": 0.5648082130774543
+        }
+    },
+    {
+        "loss": 0.5052824156327513,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.4061058150049419,
+            "border_count": 192.0,
+            "depth": 9.0,
+            "grow_policy": 0,
+            "iterations": 1000.0,
+            "l2_leaf_reg": 5.889377783681825,
+            "learning_rate": 0.012194603951385365,
+            "random_strength": 7.223313072653495,
+            "rsm": 0.563936206652033
+        }
+    },
+    {
+        "loss": 0.5101607741542213,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.5741638976557633,
+            "border_count": 224.0,
+            "depth": 10.0,
+            "grow_policy": 0,
+            "iterations": 1200.0,
+            "l2_leaf_reg": 4.549756870006418,
+            "learning_rate": 0.04297046172021162,
+            "random_strength": 6.784453647185421,
+            "rsm": 0.4965071582306984
+        }
+    },
+    {
+        "loss": 0.5025394733907718,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.6805104211600469,
             "border_count": 192.0,
             "depth": 3.0,
-            "grow_policy": 2,
-            "iterations": 800.0,
-            "l2_leaf_reg": 9.997267674872926,
-            "learning_rate": 0.012646208049498587,
-            "random_strength": 2.8189230090988175,
-            "rsm": 0.597784546872516
+            "grow_policy": 0,
+            "iterations": 1050.0,
+            "l2_leaf_reg": 3.963247895002448,
+            "learning_rate": 0.016860562194192765,
+            "random_strength": 9.420755326348223,
+            "rsm": 0.529584926279462
         }
     },
     {
-        "loss": 0.5282462403639581,
+        "loss": 0.5042666820298194,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.8535300950347691,
+            "bagging_temperature": 0.858745904908782,
+            "border_count": 256.0,
+            "depth": 5.0,
+            "grow_policy": 0,
+            "iterations": 1300.0,
+            "l2_leaf_reg": 7.211366511309835,
+            "learning_rate": 0.026866332294136437,
+            "random_strength": 8.456733227504593,
+            "rsm": 0.4583222055465234
+        }
+    },
+    {
+        "loss": 0.5269260623496208,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.12143745922543536,
+            "border_count": 224.0,
+            "depth": 6.0,
+            "grow_policy": 0,
+            "iterations": 200.0,
+            "l2_leaf_reg": 5.824517940576159,
+            "learning_rate": 0.2176525350298533,
+            "random_strength": 6.275576878981893,
+            "rsm": 0.7022545396431803
+        }
+    },
+    {
+        "loss": 0.514936639384681,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.9994268372572843,
+            "border_count": 192.0,
+            "depth": 7.0,
+            "grow_policy": 0,
+            "iterations": 900.0,
+            "l2_leaf_reg": 3.0341645857737407,
+            "learning_rate": 0.06027202193892257,
+            "random_strength": 8.0775259284766,
+            "rsm": 0.6584277393662362
+        }
+    },
+    {
+        "loss": 0.5038609523172342,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.5127478308601159,
+            "border_count": 224.0,
+            "depth": 8.0,
+            "grow_policy": 0,
+            "iterations": 800.0,
+            "l2_leaf_reg": 3.5205007849514303,
+            "learning_rate": 0.019236044285689844,
+            "random_strength": 5.0433594945645055,
+            "rsm": 0.5885913710504377
+        }
+    },
+    {
+        "loss": 0.5029460394040088,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.5977259272200832,
+            "border_count": 128.0,
+            "depth": 9.0,
+            "grow_policy": 0,
+            "iterations": 1100.0,
+            "l2_leaf_reg": 4.781803662319042,
+            "learning_rate": 0.015679351137932424,
+            "random_strength": 6.551087488100189,
+            "rsm": 0.7711219350146834
+        }
+    },
+    {
+        "loss": 0.5031489197473504,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.6793221173438935,
+            "border_count": 256.0,
+            "depth": 10.0,
+            "grow_policy": 0,
+            "iterations": 1450.0,
+            "l2_leaf_reg": 7.519839491235264,
+            "learning_rate": 0.013146072477093984,
+            "random_strength": 7.659426578489207,
+            "rsm": 0.2739849776925881
+        }
+    },
+    {
+        "loss": 0.5191017263723383,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.348782406054102,
+            "border_count": 224.0,
+            "depth": 7.0,
+            "grow_policy": 0,
+            "iterations": 1300.0,
+            "l2_leaf_reg": 2.5827444917729254,
+            "learning_rate": 0.037869413628947454,
+            "random_strength": 9.021861796431033,
+            "rsm": 0.7120786260674178
+        }
+    },
+    {
+        "loss": 0.5173745796814873,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.8980460460509975,
+            "border_count": 160.0,
+            "depth": 8.0,
+            "grow_policy": 1,
+            "iterations": 550.0,
+            "l2_leaf_reg": 5.602715915971277,
+            "learning_rate": 0.06114044955399295,
+            "random_strength": 5.515120431349238,
+            "rsm": 0.3710909472438311
+        }
+    },
+    {
+        "loss": 0.5168662327814988,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.4652762501368364,
+            "border_count": 192.0,
+            "depth": 9.0,
+            "grow_policy": 0,
+            "iterations": 950.0,
+            "l2_leaf_reg": 4.118714545130206,
+            "learning_rate": 0.030384585971670496,
+            "random_strength": 4.621092669725868,
+            "rsm": 0.5191509012226935
+        }
+    },
+    {
+        "loss": 0.5426741611594721,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.3900615445606119,
+            "border_count": 256.0,
+            "depth": 3.0,
+            "grow_policy": 1,
+            "iterations": 1200.0,
+            "l2_leaf_reg": 3.123669091041899,
+            "learning_rate": 0.024187222172940146,
+            "random_strength": 3.9080836538085464,
+            "rsm": 0.45965198906630644
+        }
+    },
+    {
+        "loss": 0.5050795662635077,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.6274321359881452,
+            "border_count": 192.0,
+            "depth": 7.0,
+            "grow_policy": 0,
+            "iterations": 1850.0,
+            "l2_leaf_reg": 8.43232754609531,
+            "learning_rate": 0.01416948635921023,
+            "random_strength": 3.409116426593583,
+            "rsm": 0.43086313960243794
+        }
+    },
+    {
+        "loss": 0.5345454117448825,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.9975151153261104,
+            "border_count": 128.0,
+            "depth": 9.0,
+            "grow_policy": 1,
+            "iterations": 450.0,
+            "l2_leaf_reg": 6.514069615438138,
+            "learning_rate": 0.018056998431777063,
+            "random_strength": 9.961640560321138,
+            "rsm": 0.5731413906074394
+        }
+    },
+    {
+        "loss": 0.5020315601281584,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.8429721172904185,
+            "border_count": 224.0,
+            "depth": 6.0,
+            "grow_policy": 0,
+            "iterations": 850.0,
+            "l2_leaf_reg": 4.954848449882606,
+            "learning_rate": 0.011332472250952134,
+            "random_strength": 1.7442234993933217,
+            "rsm": 0.6590511935641687
+        }
+    },
+    {
+        "loss": 0.5383060079838835,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.7574639073219649,
+            "border_count": 256.0,
+            "depth": 5.0,
+            "grow_policy": 2,
+            "iterations": 1550.0,
+            "l2_leaf_reg": 1.718823041608137,
+            "learning_rate": 0.12584329828916885,
+            "random_strength": 7.847738133929917,
+            "rsm": 0.687036945051943
+        }
+    },
+    {
+        "loss": 0.5130051875419699,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.6759321296711365,
+            "border_count": 32.0,
+            "depth": 10.0,
+            "grow_policy": 1,
+            "iterations": 1750.0,
+            "l2_leaf_reg": 2.744099717762371,
+            "learning_rate": 0.02154289950883948,
+            "random_strength": 6.904822332415126,
+            "rsm": 0.3934077097096488
+        }
+    },
+    {
+        "loss": 0.5255025547436212,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.13346846483467167,
+            "border_count": 160.0,
+            "depth": 8.0,
+            "grow_policy": 0,
+            "iterations": 950.0,
+            "l2_leaf_reg": 2.133915704145712,
+            "learning_rate": 0.10334979989598164,
+            "random_strength": 6.263417737851006,
+            "rsm": 0.6411651629383677
+        }
+    },
+    {
+        "loss": 0.5395242192668803,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.5270117567221669,
+            "border_count": 192.0,
+            "depth": 7.0,
+            "grow_policy": 2,
+            "iterations": 600.0,
+            "l2_leaf_reg": 4.385628222124743,
+            "learning_rate": 0.21613664916361736,
+            "random_strength": 3.884202659872117,
+            "rsm": 0.48485379700090087
+        }
+    },
+    {
+        "loss": 0.5051815949430447,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.9272869174915161,
+            "border_count": 224.0,
+            "depth": 9.0,
+            "grow_policy": 2,
+            "iterations": 1150.0,
+            "l2_leaf_reg": 5.418704713311942,
+            "learning_rate": 0.04848288411639951,
+            "random_strength": 9.8288547287223,
+            "rsm": 0.7633142933949364
+        }
+    },
+    {
+        "loss": 0.5241818501696143,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.2486094605095528,
+            "border_count": 96.0,
+            "depth": 10.0,
+            "grow_policy": 1,
+            "iterations": 1400.0,
+            "l2_leaf_reg": 9.258469415468586,
+            "learning_rate": 0.14716704422487478,
+            "random_strength": 4.546361389674079,
+            "rsm": 0.5407604220962563
+        }
+    },
+    {
+        "loss": 0.5359676494128549,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.29229998621457565,
+            "border_count": 128.0,
+            "depth": 4.0,
+            "grow_policy": 0,
+            "iterations": 200.0,
+            "l2_leaf_reg": 3.64687959333152,
+            "learning_rate": 0.011473188184012759,
+            "random_strength": 3.122217611136022,
+            "rsm": 0.31338524605033713
+        }
+    },
+    {
+        "loss": 0.5215401003065196,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.4812106745059791,
+            "border_count": 224.0,
+            "depth": 8.0,
+            "grow_policy": 2,
+            "iterations": 750.0,
+            "l2_leaf_reg": 1.4788596674370194,
+            "learning_rate": 0.06969544611313194,
+            "random_strength": 1.646329508527316,
+            "rsm": 0.21403021662189625
+        }
+    },
+    {
+        "loss": 0.5034539216925238,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.7690937002509274,
             "border_count": 256.0,
             "depth": 9.0,
             "grow_policy": 2,
-            "iterations": 950.0,
-            "l2_leaf_reg": 3.003234321403356,
-            "learning_rate": 0.13786112008128992,
-            "random_strength": 5.730064389627154,
-            "rsm": 0.7688927125390136
+            "iterations": 500.0,
+            "l2_leaf_reg": 3.206293543584435,
+            "learning_rate": 0.01459251899075457,
+            "random_strength": 4.790566813313227,
+            "rsm": 0.5073062032165435
         }
     },
     {
-        "loss": 0.5033522956762637,
+        "loss": 0.5349516989912355,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.5860278519975457,
+            "border_count": 160.0,
+            "depth": 8.0,
+            "grow_policy": 0,
+            "iterations": 650.0,
+            "l2_leaf_reg": 3.83317826008056,
+            "learning_rate": 0.03083681550563607,
+            "random_strength": 5.510609836200947,
+            "rsm": 0.6240767665425111
+        }
+    },
+    {
+        "loss": 0.5173743938368978,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.9815887186134902,
-            "border_count": 160.0,
+            "bagging_temperature": 0.8357505728470457,
+            "border_count": 256.0,
             "depth": 10.0,
+            "grow_policy": 1,
+            "iterations": 1250.0,
+            "l2_leaf_reg": 5.119942537838782,
+            "learning_rate": 0.09034477755918112,
+            "random_strength": 0.678199781794294,
+            "rsm": 0.7316150311971593
+        }
+    },
+    {
+        "loss": 0.5105663180222171,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.5482867321027032,
+            "border_count": 192.0,
+            "depth": 5.0,
             "grow_policy": 2,
-            "iterations": 550.0,
-            "l2_leaf_reg": 3.820028270044653,
-            "learning_rate": 0.014034478798336684,
-            "random_strength": 3.425622189490184,
-            "rsm": 0.6952497967989315
+            "iterations": 1100.0,
+            "l2_leaf_reg": 9.856035300956984,
+            "learning_rate": 0.025621590319688987,
+            "random_strength": 2.593542637640974,
+            "rsm": 0.5813301382133136
+        }
+    },
+    {
+        "loss": 0.5164601004056368,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.7066302716068333,
+            "border_count": 224.0,
+            "depth": 6.0,
+            "grow_policy": 2,
+            "iterations": 1400.0,
+            "l2_leaf_reg": 6.559381424497494,
+            "learning_rate": 0.04225221508169723,
+            "random_strength": 6.009713265654369,
+            "rsm": 0.40269061234469994
+        }
+    },
+    {
+        "loss": 0.5305831741264686,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.6440857057846514,
+            "border_count": 64.0,
+            "depth": 10.0,
+            "grow_policy": 0,
+            "iterations": 800.0,
+            "l2_leaf_reg": 8.16909621929858,
+            "learning_rate": 0.10858317029922374,
+            "random_strength": 8.542819423841184,
+            "rsm": 0.6660021097232873
+        }
+    },
+    {
+        "loss": 0.5034539526666222,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.3716590908198818,
+            "border_count": 96.0,
+            "depth": 9.0,
+            "grow_policy": 2,
+            "iterations": 950.0,
+            "l2_leaf_reg": 2.429259524098966,
+            "learning_rate": 0.010342359252704585,
+            "random_strength": 3.5946936913766048,
+            "rsm": 0.6851485132884474
         }
     },
     {
@@ -564,671 +1044,527 @@
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.9797704234745432,
-            "border_count": 96.0,
-            "depth": 7.0,
-            "grow_policy": 2,
-            "iterations": 500.0,
-            "l2_leaf_reg": 6.113458760037952,
-            "learning_rate": 0.01412706367820447,
-            "random_strength": 5.1840219674183095,
-            "rsm": 0.6885245333747452
-        }
-    },
-    {
-        "loss": 0.5053842584676991,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.5813493488585038,
-            "border_count": 160.0,
-            "depth": 9.0,
-            "grow_policy": 2,
-            "iterations": 300.0,
-            "l2_leaf_reg": 4.852492181870106,
-            "learning_rate": 0.0213104007835509,
-            "random_strength": 0.0076084622502106125,
-            "rsm": 0.5512804857773764
-        }
-    },
-    {
-        "loss": 0.5137164767334963,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.7845535428249282,
-            "border_count": 96.0,
-            "depth": 6.0,
-            "grow_policy": 2,
-            "iterations": 1350.0,
-            "l2_leaf_reg": 1.9762866031014426,
-            "learning_rate": 0.03138096645294786,
-            "random_strength": 0.8696771965633843,
-            "rsm": 0.6236357801366906
-        }
-    },
-    {
-        "loss": 0.507517940197689,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.9447670853948882,
+            "bagging_temperature": 0.8244342421336346,
             "border_count": 224.0,
-            "depth": 8.0,
-            "grow_policy": 2,
-            "iterations": 650.0,
-            "l2_leaf_reg": 5.529018384562403,
-            "learning_rate": 0.03911746761173486,
-            "random_strength": 2.453425392838108,
-            "rsm": 0.3214531411619105
-        }
-    },
-    {
-        "loss": 0.5191016953982401,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.34939952512058203,
-            "border_count": 160.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 1650.0,
-            "l2_leaf_reg": 3.635835826589692,
-            "learning_rate": 0.05510541610479996,
-            "random_strength": 9.854433449213154,
-            "rsm": 0.5743681634912834
-        }
-    },
-    {
-        "loss": 0.5060954237628326,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.8351755771669979,
-            "border_count": 224.0,
-            "depth": 8.0,
-            "grow_policy": 0,
-            "iterations": 350.0,
-            "l2_leaf_reg": 1.4981046745702844,
-            "learning_rate": 0.027845640140471518,
-            "random_strength": 4.163475161263728,
-            "rsm": 0.7021771459941332
-        }
-    },
-    {
-        "loss": 0.5087376382374003,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.6694826824318257,
-            "border_count": 128.0,
-            "depth": 9.0,
-            "grow_policy": 2,
-            "iterations": 200.0,
-            "l2_leaf_reg": 2.3974111259151814,
-            "learning_rate": 0.02182857332348734,
-            "random_strength": 4.959748562582218,
-            "rsm": 0.6734854259873246
-        }
-    },
-    {
-        "loss": 0.5054863181213343,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.6118729072224673,
-            "border_count": 64.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 1100.0,
-            "l2_leaf_reg": 6.705158996676895,
-            "learning_rate": 0.011699872260715508,
-            "random_strength": 1.8674342284927252,
-            "rsm": 0.738319272281275
-        }
-    },
-    {
-        "loss": 0.5046734958358423,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.737708404272764,
-            "border_count": 160.0,
             "depth": 6.0,
             "grow_policy": 0,
-            "iterations": 450.0,
-            "l2_leaf_reg": 2.7958902543927517,
-            "learning_rate": 0.015618004732488843,
-            "random_strength": 3.2472631081741454,
-            "rsm": 0.3618649148454261
+            "iterations": 850.0,
+            "l2_leaf_reg": 4.820075664367833,
+            "learning_rate": 0.017939918108367005,
+            "random_strength": 1.563328058762812,
+            "rsm": 0.6069457048599023
         }
     },
     {
-        "loss": 0.5292620668891845,
+        "loss": 0.5022345643678929,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.22112990818093115,
-            "border_count": 128.0,
-            "depth": 8.0,
-            "grow_policy": 1,
-            "iterations": 550.0,
-            "l2_leaf_reg": 1.0183160996883522,
-            "learning_rate": 0.11475959273289307,
-            "random_strength": 8.08040362128564,
-            "rsm": 0.6412241096187273
-        }
-    },
-    {
-        "loss": 0.5370866196851545,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.02964388026430792,
-            "border_count": 96.0,
-            "depth": 7.0,
-            "grow_policy": 2,
-            "iterations": 1400.0,
-            "l2_leaf_reg": 5.166671385707859,
-            "learning_rate": 0.20926932598664758,
-            "random_strength": 0.7258261525508534,
-            "rsm": 0.5030917788407253
-        }
-    },
-    {
-        "loss": 0.5340379940678406,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.991750698466148,
+            "bagging_temperature": 0.8439860147502637,
             "border_count": 256.0,
-            "depth": 8.0,
-            "grow_policy": 1,
+            "depth": 6.0,
+            "grow_policy": 0,
             "iterations": 900.0,
-            "l2_leaf_reg": 8.357712261525048,
-            "learning_rate": 0.0250178399605891,
-            "random_strength": 4.808304223257389,
-            "rsm": 0.6031608103828284
+            "l2_leaf_reg": 4.923595353713039,
+            "learning_rate": 0.01106322176697716,
+            "random_strength": 1.8702338904629268,
+            "rsm": 0.7068345444163979
         }
     },
     {
-        "loss": 0.5032508864786911,
+        "loss": 0.5035557025792752,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.4105643522699511,
-            "border_count": 192.0,
-            "depth": 9.0,
-            "grow_policy": 2,
-            "iterations": 700.0,
-            "l2_leaf_reg": 5.817260416800311,
-            "learning_rate": 0.01887895671139933,
-            "random_strength": 0.3756325642405296,
-            "rsm": 0.7720360575807207
-        }
-    },
-    {
-        "loss": 0.5320057834836196,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.410496348131519,
-            "border_count": 192.0,
-            "depth": 8.0,
-            "grow_policy": 0,
-            "iterations": 1150.0,
-            "l2_leaf_reg": 6.787889440461363,
-            "learning_rate": 0.07152923528856817,
-            "random_strength": 1.3178668857342442,
-            "rsm": 0.3026389137849584
-        }
-    },
-    {
-        "loss": 0.5034542624076042,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.2202795171074962,
-            "border_count": 224.0,
-            "depth": 9.0,
-            "grow_policy": 2,
-            "iterations": 1000.0,
-            "l2_leaf_reg": 4.369518050877851,
-            "learning_rate": 0.01910473311967988,
-            "random_strength": 0.36123921566017353,
-            "rsm": 0.26468056673971296
-        }
-    },
-    {
-        "loss": 0.5517170801089297,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.2919621053674193,
-            "border_count": 256.0,
-            "depth": 3.0,
-            "grow_policy": 1,
-            "iterations": 700.0,
-            "l2_leaf_reg": 8.140829826009554,
-            "learning_rate": 0.03962078944428387,
-            "random_strength": 0.15460793887028285,
-            "rsm": 0.39039570833299203
-        }
-    },
-    {
-        "loss": 0.5041651489358538,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.5126931684717543,
-            "border_count": 224.0,
-            "depth": 7.0,
-            "grow_policy": 2,
-            "iterations": 1500.0,
-            "l2_leaf_reg": 7.775524647479587,
-            "learning_rate": 0.011147892469117193,
-            "random_strength": 1.585233091134091,
-            "rsm": 0.7750848911377706
-        }
-    },
-    {
-        "loss": 0.5433852335323108,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.28530072331929945,
+            "bagging_temperature": 0.8927907714201505,
             "border_count": 192.0,
             "depth": 5.0,
             "grow_policy": 0,
-            "iterations": 1850.0,
-            "l2_leaf_reg": 9.822916884686002,
-            "learning_rate": 0.05808072741018605,
-            "random_strength": 2.1538133562608053,
-            "rsm": 0.4816397564210248
+            "iterations": 1000.0,
+            "l2_leaf_reg": 4.496905558258928,
+            "learning_rate": 0.012513393645239615,
+            "random_strength": 1.0076382098080414,
+            "rsm": 0.6464879767552517
         }
     },
     {
-        "loss": 0.5078234067543357,
+        "loss": 0.5051815020207502,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.1432243941369506,
+            "bagging_temperature": 0.611106168642285,
+            "border_count": 256.0,
+            "depth": 7.0,
+            "grow_policy": 0,
+            "iterations": 650.0,
+            "l2_leaf_reg": 6.180888429889434,
+            "learning_rate": 0.021463266023664114,
+            "random_strength": 0.013967254609610569,
+            "rsm": 0.7691821584126063
+        }
+    },
+    {
+        "loss": 0.502132969325731,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.775471250775011,
+            "border_count": 224.0,
+            "depth": 5.0,
+            "grow_policy": 0,
+            "iterations": 800.0,
+            "l2_leaf_reg": 5.699966003220266,
+            "learning_rate": 0.013753081788447209,
+            "random_strength": 4.144454391748605,
+            "rsm": 0.6687544568160275
+        }
+    },
+    {
+        "loss": 0.5042668059262123,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.7528785416081167,
+            "border_count": 192.0,
+            "depth": 6.0,
+            "grow_policy": 0,
+            "iterations": 350.0,
+            "l2_leaf_reg": 4.046502954465679,
+            "learning_rate": 0.010133299103932136,
+            "random_strength": 0.4158394811300963,
+            "rsm": 0.5406227784844834
+        }
+    },
+    {
+        "loss": 0.5023367788920194,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.704952498589108,
+            "border_count": 256.0,
+            "depth": 7.0,
+            "grow_policy": 0,
+            "iterations": 700.0,
+            "l2_leaf_reg": 5.220366993931854,
+            "learning_rate": 0.015717018217581404,
+            "random_strength": 1.266310474913679,
+            "rsm": 0.627660063912689
+        }
+    },
+    {
+        "loss": 0.5048763761791839,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.956040901237794,
+            "border_count": 224.0,
+            "depth": 4.0,
+            "grow_policy": 0,
+            "iterations": 550.0,
+            "l2_leaf_reg": 2.8360596832263183,
+            "learning_rate": 0.0117778278637595,
+            "random_strength": 2.5064887744938074,
+            "rsm": 0.5720356703392541
+        }
+    },
+    {
+        "loss": 0.5014219279269903,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.6562599809176842,
             "border_count": 256.0,
             "depth": 6.0,
-            "grow_policy": 1,
-            "iterations": 100.0,
-            "l2_leaf_reg": 5.886855114551749,
-            "learning_rate": 0.016381384313740106,
-            "random_strength": 2.725255770810664,
-            "rsm": 0.5693601711743381
+            "grow_policy": 0,
+            "iterations": 1100.0,
+            "l2_leaf_reg": 3.3062700960917466,
+            "learning_rate": 0.014655320306098733,
+            "random_strength": 1.889239469361537,
+            "rsm": 0.786625124901405
         }
     },
     {
-        "loss": 0.5104656831771,
+        "loss": 0.5043688655798475,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.46062741471679053,
-            "border_count": 192.0,
-            "depth": 8.0,
-            "grow_policy": 2,
-            "iterations": 850.0,
-            "l2_leaf_reg": 7.6495742836374285,
-            "learning_rate": 0.04542603139567572,
-            "random_strength": 6.411938817713789,
-            "rsm": 0.7200904102192057
+            "bagging_temperature": 0.43427002818677735,
+            "border_count": 256.0,
+            "depth": 6.0,
+            "grow_policy": 0,
+            "iterations": 1100.0,
+            "l2_leaf_reg": 2.0739387699344447,
+            "learning_rate": 0.01949999990805279,
+            "random_strength": 5.152934669349973,
+            "rsm": 0.782079518128129
         }
     },
     {
-        "loss": 0.54582329772551,
+        "loss": 0.51422473071119,
         "status": "ok",
         "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.33355824349661434,
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.4966782584252599,
             "border_count": 256.0,
             "depth": 4.0,
             "grow_policy": 2,
-            "iterations": 750.0,
-            "l2_leaf_reg": 6.5259433308616535,
-            "learning_rate": 0.02825910697633711,
-            "random_strength": 0.9369585884755146,
-            "rsm": 0.21220592464700894
+            "iterations": 1350.0,
+            "l2_leaf_reg": 3.6970279996461755,
+            "learning_rate": 0.03372808359213383,
+            "random_strength": 3.3676695851552227,
+            "rsm": 0.7344976317977716
         }
     },
     {
-        "loss": 0.5071122724333004,
+        "loss": 0.5119900424469042,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.41774218723942075,
-            "border_count": 224.0,
-            "depth": 9.0,
-            "grow_policy": 0,
-            "iterations": 1300.0,
-            "l2_leaf_reg": 5.773881327930073,
-            "learning_rate": 0.02293919294616686,
-            "random_strength": 0.40430836951059423,
-            "rsm": 0.6261443179047526
-        }
-    },
-    {
-        "loss": 0.5202196744993965,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.5598363696587974,
-            "border_count": 224.0,
+            "bagging_temperature": 0.6588072665916517,
+            "border_count": 256.0,
             "depth": 7.0,
-            "grow_policy": 1,
-            "iterations": 1600.0,
-            "l2_leaf_reg": 4.302685795551158,
-            "learning_rate": 0.03671036333891505,
-            "random_strength": 4.003670354941196,
-            "rsm": 0.6641551957524059
-        }
-    },
-    {
-        "loss": 0.5066036777405263,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.09850592914097517,
-            "border_count": 128.0,
-            "depth": 9.0,
-            "grow_policy": 2,
-            "iterations": 1050.0,
-            "l2_leaf_reg": 4.923954078994573,
-            "learning_rate": 0.02016614427685165,
-            "random_strength": 1.4946777130179436,
-            "rsm": 0.7574092797195796
-        }
-    },
-    {
-        "loss": 0.5396258143090422,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.5986890898543094,
-            "border_count": 256.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 200.0,
-            "l2_leaf_reg": 5.276770139673205,
-            "learning_rate": 0.050000257814861705,
-            "random_strength": 7.176234817351899,
-            "rsm": 0.4497094304455237
-        }
-    },
-    {
-        "loss": 0.505181192279768,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.2392796160052285,
-            "border_count": 192.0,
-            "depth": 8.0,
-            "grow_policy": 2,
-            "iterations": 1150.0,
-            "l2_leaf_reg": 8.754528594570484,
-            "learning_rate": 0.011570441547233667,
-            "random_strength": 2.1196462327943815,
-            "rsm": 0.5296524156723041
-        }
-    },
-    {
-        "loss": 0.5041652108840504,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.4957424345783002,
-            "border_count": 160.0,
-            "depth": 9.0,
             "grow_policy": 0,
-            "iterations": 700.0,
-            "l2_leaf_reg": 7.116405720482777,
-            "learning_rate": 0.015022156052806932,
-            "random_strength": 8.9970054341827,
-            "rsm": 0.7864203973554474
+            "iterations": 1500.0,
+            "l2_leaf_reg": 3.295123835158902,
+            "learning_rate": 0.028408456895761557,
+            "random_strength": 2.016826315970273,
+            "rsm": 0.748337516987966
         }
     },
     {
-        "loss": 0.5327164222190834,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.15689274328309827,
-            "border_count": 224.0,
-            "depth": 6.0,
-            "grow_policy": 1,
-            "iterations": 400.0,
-            "l2_leaf_reg": 6.360903046362067,
-            "learning_rate": 0.016876171322611534,
-            "random_strength": 5.6271440485119095,
-            "rsm": 0.40835724712549964
-        }
-    },
-    {
-        "loss": 0.5197120709777656,
+        "loss": 0.5074169646374915,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.6677113883801555,
-            "border_count": 256.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 600.0,
-            "l2_leaf_reg": 6.9609250361995745,
-            "learning_rate": 0.10444141092030493,
-            "random_strength": 1.0122020490949737,
-            "rsm": 0.7323795920325655
-        }
-    },
-    {
-        "loss": 0.5036573595696334,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.39272788219901994,
+            "bagging_temperature": 0.5412839393121783,
             "border_count": 192.0,
             "depth": 5.0,
+            "grow_policy": 1,
+            "iterations": 1250.0,
+            "l2_leaf_reg": 4.277852540936322,
+            "learning_rate": 0.017318622887944023,
+            "random_strength": 2.8949856424232197,
+            "rsm": 0.6970715475447813
+        }
+    },
+    {
+        "loss": 0.5050802786677668,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.6108593184199196,
+            "border_count": 160.0,
+            "depth": 8.0,
+            "grow_policy": 0,
+            "iterations": 1150.0,
+            "l2_leaf_reg": 2.4019114318546877,
+            "learning_rate": 0.014830916770791097,
+            "random_strength": 7.146948733917827,
+            "rsm": 0.4771514845473628
+        }
+    },
+    {
+        "loss": 0.5035554547864893,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.4344230064441641,
+            "border_count": 224.0,
+            "depth": 3.0,
             "grow_policy": 2,
             "iterations": 1000.0,
-            "l2_leaf_reg": 3.259086125828677,
-            "learning_rate": 0.012591387611076595,
-            "random_strength": 4.428551887204126,
-            "rsm": 0.6514879963176904
+            "l2_leaf_reg": 1.9260966943384332,
+            "learning_rate": 0.01305076134273036,
+            "random_strength": 0.9074149733728286,
+            "rsm": 0.7226297790272292
         }
     },
     {
-        "loss": 0.5023365001251354,
+        "loss": 0.515647154223752,
         "status": "ok",
         "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.9620901796082131,
-            "border_count": 160.0,
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.7018004155399216,
+            "border_count": 256.0,
             "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 600.0,
-            "l2_leaf_reg": 3.8678130390350094,
-            "learning_rate": 0.01758839724760894,
-            "random_strength": 3.2720077116638993,
-            "rsm": 0.6857760477501817
+            "grow_policy": 0,
+            "iterations": 1650.0,
+            "l2_leaf_reg": 1.4541138976835022,
+            "learning_rate": 0.022606534768089687,
+            "random_strength": 1.512660684174207,
+            "rsm": 0.6050926941183836
         }
     },
     {
-        "loss": 0.5048765620237732,
+        "loss": 0.5150372122816016,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.8684923543610235,
-            "border_count": 128.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 500.0,
-            "l2_leaf_reg": 2.752477457922946,
-            "learning_rate": 0.02662437791405209,
-            "random_strength": 2.870810583102977,
-            "rsm": 0.7497770048537465
-        }
-    },
-    {
-        "loss": 0.5049780331695424,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.9342082989240056,
+            "bagging_temperature": 0.3228216710521669,
             "border_count": 160.0,
+            "depth": 7.0,
+            "grow_policy": 2,
+            "iterations": 1050.0,
+            "l2_leaf_reg": 3.407308626576506,
+            "learning_rate": 0.051986563212962855,
+            "random_strength": 7.612159901863832,
+            "rsm": 0.7949203007167082
+        }
+    },
+    {
+        "loss": 0.5030479132130548,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.5589926104396263,
+            "border_count": 256.0,
+            "depth": 6.0,
+            "grow_policy": 0,
+            "iterations": 1250.0,
+            "l2_leaf_reg": 4.704968159673201,
+            "learning_rate": 0.018843232039262647,
+            "random_strength": 5.373407332021147,
+            "rsm": 0.4392764715214417
+        }
+    },
+    {
+        "loss": 0.5046729073279761,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.7359694909193295,
+            "border_count": 192.0,
+            "depth": 5.0,
+            "grow_policy": 1,
+            "iterations": 750.0,
+            "l2_leaf_reg": 2.9387859419564695,
+            "learning_rate": 0.02468037702632757,
+            "random_strength": 4.807727863371175,
+            "rsm": 0.5541604686783254
+        }
+    },
+    {
+        "loss": 0.5038605186798593,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.8047540944399934,
+            "border_count": 224.0,
             "depth": 9.0,
-            "grow_policy": 2,
-            "iterations": 850.0,
-            "l2_leaf_reg": 4.197979201243234,
-            "learning_rate": 0.010123651043330285,
-            "random_strength": 3.797126003499547,
-            "rsm": 0.780372774075251
+            "grow_policy": 0,
+            "iterations": 900.0,
+            "l2_leaf_reg": 6.020041032225915,
+            "learning_rate": 0.010555825363695235,
+            "random_strength": 4.144933240343016,
+            "rsm": 0.5235956361667304
         }
     },
     {
-        "loss": 0.5058925124453926,
+        "loss": 0.5284502977230321,
         "status": "ok",
         "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.8142789508660371,
-            "border_count": 160.0,
-            "depth": 10.0,
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.6652423447966984,
+            "border_count": 256.0,
+            "depth": 8.0,
             "grow_policy": 2,
-            "iterations": 600.0,
-            "l2_leaf_reg": 3.621828221581794,
-            "learning_rate": 0.01795977348297234,
-            "random_strength": 3.307584558410027,
-            "rsm": 0.6839365362491577
+            "iterations": 1750.0,
+            "l2_leaf_reg": 1.161584251375242,
+            "learning_rate": 0.03755092588024236,
+            "random_strength": 6.6775314920157385,
+            "rsm": 0.715700638871846
         }
     },
     {
-        "loss": 0.5051816878653395,
+        "loss": 0.5009140146643771,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.7130872314808058,
+            "bagging_temperature": 0.6388058120072776,
+            "border_count": 32.0,
+            "depth": 3.0,
+            "grow_policy": 0,
+            "iterations": 1550.0,
+            "l2_leaf_reg": 3.846783294869394,
+            "learning_rate": 0.015867158272229342,
+            "random_strength": 8.153787461556025,
+            "rsm": 0.5851312537417908
+        }
+    },
+    {
+        "loss": 0.501828308095638,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.5873310207480797,
+            "border_count": 32.0,
+            "depth": 3.0,
+            "grow_policy": 0,
+            "iterations": 2000.0,
+            "l2_leaf_reg": 2.618998306473931,
+            "learning_rate": 0.01669245737794778,
+            "random_strength": 8.08402132623301,
+            "rsm": 0.23364791988446026
+        }
+    },
+    {
+        "loss": 0.5069086177375033,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.6379126693603937,
+            "border_count": 32.0,
+            "depth": 3.0,
+            "grow_policy": 0,
+            "iterations": 1850.0,
+            "l2_leaf_reg": 5.498961993455219,
+            "learning_rate": 0.03259376628960137,
+            "random_strength": 8.866502610762625,
+            "rsm": 0.3493010974269279
+        }
+    },
+    {
+        "loss": 0.5028451257920077,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.8827733064602594,
+            "border_count": 64.0,
+            "depth": 4.0,
+            "grow_policy": 0,
+            "iterations": 1550.0,
+            "l2_leaf_reg": 3.821948079350361,
+            "learning_rate": 0.019824205120882676,
+            "random_strength": 8.186342172031923,
+            "rsm": 0.46679545396897004
+        }
+    },
+    {
+        "loss": 0.5457224460617054,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.9208690334102616,
             "border_count": 96.0,
-            "depth": 9.0,
-            "grow_policy": 2,
-            "iterations": 250.0,
-            "l2_leaf_reg": 3.406869534144767,
-            "learning_rate": 0.0329436527163379,
-            "random_strength": 2.405982883356767,
-            "rsm": 0.720911517346749
+            "depth": 3.0,
+            "grow_policy": 0,
+            "iterations": 1800.0,
+            "l2_leaf_reg": 4.120745095177867,
+            "learning_rate": 0.06386717948122726,
+            "random_strength": 9.241349365919488,
+            "rsm": 0.4257075601016242
         }
     },
     {
-        "loss": 0.5028445682582399,
+        "loss": 0.5269260623496208,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.546641470941803,
-            "border_count": 192.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 400.0,
-            "l2_leaf_reg": 1.7224572363592487,
-            "learning_rate": 0.023831039473299856,
-            "random_strength": 1.830834605645699,
-            "rsm": 0.7631593707113757
-        }
-    },
-    {
-        "loss": 0.5070103986242545,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.36171650955884477,
-            "border_count": 192.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 400.0,
-            "l2_leaf_reg": 1.8896256770209698,
-            "learning_rate": 0.020465795551431805,
-            "random_strength": 0.6806929517874891,
-            "rsm": 0.5911098248275635
-        }
-    },
-    {
-        "loss": 0.5103631279378933,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.0004442864046378392,
-            "border_count": 160.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 100.0,
-            "l2_leaf_reg": 1.3151983109045715,
-            "learning_rate": 0.02350922293287916,
-            "random_strength": 4.565544926441282,
-            "rsm": 0.79911821051198
-        }
-    },
-    {
-        "loss": 0.5052825395291443,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.5307158555258223,
-            "border_count": 192.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 450.0,
-            "l2_leaf_reg": 2.2014315116074767,
-            "learning_rate": 0.030303671006779262,
-            "random_strength": 2.6263036411065652,
-            "rsm": 0.7603525921987612
-        }
-    },
-    {
-        "loss": 0.509347332386765,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.4341613326973359,
-            "border_count": 160.0,
-            "depth": 9.0,
-            "grow_policy": 2,
-            "iterations": 650.0,
-            "l2_leaf_reg": 5.59006587275739,
-            "learning_rate": 0.041268068176047785,
-            "random_strength": 1.2874844839838147,
-            "rsm": 0.6350492704207547
-        }
-    },
-    {
-        "loss": 0.5056896940502473,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.26145398418035426,
+            "bagging_temperature": 0.7824970867651753,
             "border_count": 128.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 300.0,
-            "l2_leaf_reg": 4.885683337864281,
-            "learning_rate": 0.013439805966739243,
-            "random_strength": 0.008289177828681549,
-            "rsm": 0.6700395543655127
+            "depth": 4.0,
+            "grow_policy": 0,
+            "iterations": 1600.0,
+            "l2_leaf_reg": 6.924924914350395,
+            "learning_rate": 0.0839083251866637,
+            "random_strength": 7.391626527672408,
+            "rsm": 0.5032140024203409
         }
     },
     {
-        "loss": 0.5068066510061626,
+        "loss": 0.5041654896509342,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.31652633524026763,
-            "border_count": 192.0,
-            "depth": 9.0,
-            "grow_policy": 2,
-            "iterations": 150.0,
-            "l2_leaf_reg": 1.5913936397203179,
-            "learning_rate": 0.08491681552598934,
-            "random_strength": 3.0854901214756763,
-            "rsm": 0.7057677110695003
+            "bagging_temperature": 0.8619794793370273,
+            "border_count": 128.0,
+            "depth": 3.0,
+            "grow_policy": 0,
+            "iterations": 1700.0,
+            "l2_leaf_reg": 6.713754203772736,
+            "learning_rate": 0.027357658771056274,
+            "random_strength": 7.0228861073968165,
+            "rsm": 0.38168296501041565
+        }
+    },
+    {
+        "loss": 0.5129035615257098,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.9844463179134677,
+            "border_count": 64.0,
+            "depth": 4.0,
+            "grow_policy": 0,
+            "iterations": 1350.0,
+            "l2_leaf_reg": 7.160919493148361,
+            "learning_rate": 0.044778099349313066,
+            "random_strength": 9.51807850152579,
+            "rsm": 0.2956771996343613
+        }
+    },
+    {
+        "loss": 0.5040634609713972,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.5167781027326612,
+            "border_count": 96.0,
+            "depth": 4.0,
+            "grow_policy": 0,
+            "iterations": 1450.0,
+            "l2_leaf_reg": 4.438666502449008,
+            "learning_rate": 0.013461566661880454,
+            "random_strength": 5.8265708687146684,
+            "rsm": 0.4876573033360278
+        }
+    },
+    {
+        "loss": 0.5438934565359064,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.47162923178867655,
+            "border_count": 32.0,
+            "depth": 5.0,
+            "grow_policy": 0,
+            "iterations": 1950.0,
+            "l2_leaf_reg": 5.3298358063090845,
+            "learning_rate": 0.01549123339064427,
+            "random_strength": 6.232167204214094,
+            "rsm": 0.322340401521629
+        }
+    },
+    {
+        "loss": 0.5036572046991423,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.41189396753570273,
+            "border_count": 160.0,
+            "depth": 3.0,
+            "grow_policy": 1,
+            "iterations": 1500.0,
+            "l2_leaf_reg": 2.316961060642818,
+            "learning_rate": 0.012422911607933861,
+            "random_strength": 8.336502062794233,
+            "rsm": 0.5404241129108388
+        }
+    },
+    {
+        "loss": 0.5394230888361917,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.7473974404677803,
+            "border_count": 96.0,
+            "depth": 8.0,
+            "grow_policy": 0,
+            "iterations": 1350.0,
+            "l2_leaf_reg": 3.416468866899316,
+            "learning_rate": 0.2637925855530015,
+            "random_strength": 6.468135837492653,
+            "rsm": 0.44575756120378407
         }
     },
     {
@@ -1236,1167 +1572,831 @@
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.640405086829366,
-            "border_count": 160.0,
-            "depth": 10.0,
-            "grow_policy": 0,
-            "iterations": 500.0,
-            "l2_leaf_reg": 7.457152161534828,
-            "learning_rate": 0.06394400256043684,
-            "random_strength": 1.8216756891126429,
-            "rsm": 0.5561697282145232
-        }
-    },
-    {
-        "loss": 0.5028442894913558,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.17836604754720714,
-            "border_count": 192.0,
-            "depth": 8.0,
-            "grow_policy": 2,
-            "iterations": 750.0,
-            "l2_leaf_reg": 3.8347461515228924,
-            "learning_rate": 0.014737202657742964,
-            "random_strength": 3.5063956273634678,
-            "rsm": 0.6050596348099383
-        }
-    },
-    {
-        "loss": 0.5084323575253431,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.09127729455684568,
-            "border_count": 160.0,
-            "depth": 7.0,
-            "grow_policy": 1,
-            "iterations": 750.0,
-            "l2_leaf_reg": 2.3435360523499877,
-            "learning_rate": 0.024397066787970302,
-            "random_strength": 5.5325908626259945,
-            "rsm": 0.5183606399580818
-        }
-    },
-    {
-        "loss": 0.5359674325941675,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.05228422095374688,
+            "bagging_temperature": 0.6871658894096977,
             "border_count": 128.0,
-            "depth": 8.0,
-            "grow_policy": 2,
-            "iterations": 350.0,
-            "l2_leaf_reg": 4.55866806790774,
-            "learning_rate": 0.014858062660004535,
-            "random_strength": 3.6366873778049595,
-            "rsm": 0.6115915330115211
-        }
-    },
-    {
-        "loss": 0.5060958883743059,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.18938107150841088,
-            "border_count": 224.0,
-            "depth": 8.0,
-            "grow_policy": 2,
-            "iterations": 250.0,
-            "l2_leaf_reg": 3.7080700460871285,
-            "learning_rate": 0.026758064973218004,
-            "random_strength": 6.121709921762852,
-            "rsm": 0.5889993778536353
-        }
-    },
-    {
-        "loss": 0.5071118078218271,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.17609930900648185,
-            "border_count": 192.0,
-            "depth": 7.0,
-            "grow_policy": 2,
-            "iterations": 600.0,
-            "l2_leaf_reg": 2.9325151982304627,
-            "learning_rate": 0.03529512185409717,
-            "random_strength": 4.177610863497932,
-            "rsm": 0.6503200162997452
-        }
-    },
-    {
-        "loss": 0.5032510723232804,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.48336700942920185,
-            "border_count": 160.0,
-            "depth": 4.0,
-            "grow_policy": 0,
-            "iterations": 900.0,
-            "l2_leaf_reg": 2.5792943854363957,
-            "learning_rate": 0.011165917083703198,
-            "random_strength": 6.998791830682135,
-            "rsm": 0.48815227084749596
-        }
-    },
-    {
-        "loss": 0.5089410761145101,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.9601599160356613,
-            "border_count": 96.0,
-            "depth": 8.0,
-            "grow_policy": 2,
-            "iterations": 400.0,
-            "l2_leaf_reg": 3.950295346320567,
-            "learning_rate": 0.05050091287880773,
-            "random_strength": 5.0732161146651995,
-            "rsm": 0.6795830811587588
-        }
-    },
-    {
-        "loss": 0.5346471926316336,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.11071251640538299,
-            "border_count": 128.0,
-            "depth": 7.0,
-            "grow_policy": 1,
-            "iterations": 550.0,
-            "l2_leaf_reg": 3.3610679465552993,
-            "learning_rate": 0.017651408779617846,
-            "random_strength": 4.84571645494703,
-            "rsm": 0.5652383653997665
-        }
-    },
-    {
-        "loss": 0.5047747191888254,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.7471062073218704,
-            "border_count": 192.0,
             "depth": 5.0,
-            "grow_policy": 2,
-            "iterations": 750.0,
-            "l2_leaf_reg": 1.8386145311752906,
-            "learning_rate": 0.01263024122825292,
-            "random_strength": 3.5136108799179357,
-            "rsm": 0.5369529688180676
-        }
-    },
-    {
-        "loss": 0.5074167478188041,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.6144755349995378,
-            "border_count": 64.0,
-            "depth": 9.0,
-            "grow_policy": 2,
-            "iterations": 1200.0,
-            "l2_leaf_reg": 1.2231210289656869,
-            "learning_rate": 0.02911825023586894,
-            "random_strength": 2.28661154935718,
-            "rsm": 0.6116377826184206
-        }
-    },
-    {
-        "loss": 0.5084325743440306,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.7881858619067779,
-            "border_count": 224.0,
-            "depth": 6.0,
-            "grow_policy": 2,
-            "iterations": 1100.0,
-            "l2_leaf_reg": 3.1928626466657364,
-            "learning_rate": 0.021834045149499506,
-            "random_strength": 3.1019969452533225,
-            "rsm": 0.6953847697747981
-        }
-    },
-    {
-        "loss": 0.5043684319424724,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.6834431024966177,
-            "border_count": 224.0,
-            "depth": 8.0,
             "grow_policy": 0,
-            "iterations": 1000.0,
-            "l2_leaf_reg": 2.1296751895465635,
-            "learning_rate": 0.015800027097437188,
-            "random_strength": 5.82073109798373,
-            "rsm": 0.7427657943134677
-        }
-    },
-    {
-        "loss": 0.5344443432623902,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.880923341468713,
-            "border_count": 128.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 950.0,
-            "l2_leaf_reg": 4.489173031997691,
-            "learning_rate": 0.044911122898932815,
-            "random_strength": 5.336295062037491,
-            "rsm": 0.6320652045048136
-        }
-    },
-    {
-        "loss": 0.504165458676836,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.27255146093215793,
-            "border_count": 192.0,
-            "depth": 8.0,
-            "grow_policy": 1,
-            "iterations": 200.0,
-            "l2_leaf_reg": 4.6953386963354315,
-            "learning_rate": 0.019661969443156218,
-            "random_strength": 4.049781271871109,
-            "rsm": 0.5810020135858145
-        }
-    },
-    {
-        "loss": 0.5058924814712944,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.016679255555379663,
-            "border_count": 160.0,
-            "depth": 9.0,
-            "grow_policy": 2,
-            "iterations": 650.0,
-            "l2_leaf_reg": 3.802191831249087,
-            "learning_rate": 0.011963582307059387,
-            "random_strength": 2.6079955055068402,
-            "rsm": 0.6561964115288372
-        }
-    },
-    {
-        "loss": 0.5040638636346741,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.539641344318635,
-            "border_count": 192.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 500.0,
-            "l2_leaf_reg": 4.127330619341194,
-            "learning_rate": 0.014300037564085311,
-            "random_strength": 3.8137270047880394,
-            "rsm": 0.44078449596239133
-        }
-    },
-    {
-        "loss": 0.5369844051610282,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.5811751524454356,
-            "border_count": 224.0,
-            "depth": 9.0,
-            "grow_policy": 0,
-            "iterations": 800.0,
-            "l2_leaf_reg": 5.407298229326137,
-            "learning_rate": 0.15507697286033512,
-            "random_strength": 1.5036172714937406,
-            "rsm": 0.5033532262844238
-        }
-    },
-    {
-        "loss": 0.5037589236376971,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.3153982510350126,
-            "border_count": 256.0,
-            "depth": 8.0,
-            "grow_policy": 2,
-            "iterations": 250.0,
-            "l2_leaf_reg": 2.580858872863783,
-            "learning_rate": 0.03727047089800974,
-            "random_strength": 2.967267661798937,
-            "rsm": 0.6022491947668843
-        }
-    },
-    {
-        "loss": 0.5093474872572561,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.8213398398318859,
-            "border_count": 160.0,
-            "depth": 7.0,
-            "grow_policy": 2,
-            "iterations": 350.0,
-            "l2_leaf_reg": 2.8961677761222178,
-            "learning_rate": 0.010862563651948844,
-            "random_strength": 7.869242708841764,
-            "rsm": 0.47399258497915453
-        }
-    },
-    {
-        "loss": 0.5029461013522052,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.1250324540573558,
-            "border_count": 32.0,
-            "depth": 3.0,
-            "grow_policy": 1,
-            "iterations": 550.0,
-            "l2_leaf_reg": 1.7034582069024453,
-            "learning_rate": 0.017110778987920277,
-            "random_strength": 4.693267695124675,
-            "rsm": 0.7138186599561561
-        }
-    },
-    {
-        "loss": 0.5192034453108931,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.3703953288303117,
-            "border_count": 192.0,
-            "depth": 6.0,
-            "grow_policy": 2,
-            "iterations": 850.0,
-            "l2_leaf_reg": 5.098974296071021,
-            "learning_rate": 0.05867305558722748,
-            "random_strength": 2.037707825013724,
-            "rsm": 0.7300750768884708
-        }
-    },
-    {
-        "loss": 0.5429789153118596,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.046755921430472275,
-            "border_count": 128.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 450.0,
-            "l2_leaf_reg": 1.338237923414718,
-            "learning_rate": 0.07699415443566913,
-            "random_strength": 4.340914094414912,
-            "rsm": 0.6917785523457676
-        }
-    },
-    {
-        "loss": 0.503962082747923,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.22342420913773103,
-            "border_count": 256.0,
-            "depth": 9.0,
-            "grow_policy": 0,
-            "iterations": 700.0,
-            "l2_leaf_reg": 6.000162806153614,
-            "learning_rate": 0.021004899113549632,
-            "random_strength": 1.7167482096906863,
-            "rsm": 0.5537181247831898
-        }
-    },
-    {
-        "loss": 0.5077220285308612,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.4653994518309121,
-            "border_count": 160.0,
-            "depth": 8.0,
-            "grow_policy": 2,
-            "iterations": 900.0,
-            "l2_leaf_reg": 3.0684445043601545,
-            "learning_rate": 0.032401802523300674,
-            "random_strength": 3.454788985951488,
-            "rsm": 0.6708748868829257
-        }
-    },
-    {
-        "loss": 0.5090427331048684,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.33772590891006415,
-            "border_count": 224.0,
-            "depth": 7.0,
-            "grow_policy": 1,
-            "iterations": 750.0,
-            "l2_leaf_reg": 1.0050690563959548,
-            "learning_rate": 0.026434662042895418,
-            "random_strength": 2.7894862686291195,
-            "rsm": 0.5190117121633444
-        }
-    },
-    {
-        "loss": 0.5022345953419911,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.7204644511740705,
-            "border_count": 96.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 400.0,
-            "l2_leaf_reg": 3.9260591734721277,
-            "learning_rate": 0.024641842717202437,
-            "random_strength": 6.544828582681004,
-            "rsm": 0.6208373548691649
-        }
-    },
-    {
-        "loss": 0.5333261783166445,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.7072767622581687,
-            "border_count": 64.0,
-            "depth": 9.0,
-            "grow_policy": 2,
-            "iterations": 150.0,
-            "l2_leaf_reg": 4.761544194753838,
-            "learning_rate": 0.013345573178428024,
-            "random_strength": 6.627646259448329,
-            "rsm": 0.3652410763939988
-        }
-    },
-    {
-        "loss": 0.5087380409006772,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.8486002696491003,
-            "border_count": 96.0,
-            "depth": 5.0,
-            "grow_policy": 2,
-            "iterations": 1100.0,
-            "l2_leaf_reg": 6.264305266123184,
-            "learning_rate": 0.034415696719339785,
-            "random_strength": 8.738816464069647,
-            "rsm": 0.49404766454261206
-        }
-    },
-    {
-        "loss": 0.5033525124949512,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.7643224695176606,
-            "border_count": 32.0,
-            "depth": 6.0,
-            "grow_policy": 0,
-            "iterations": 600.0,
-            "l2_leaf_reg": 4.33060539982452,
-            "learning_rate": 0.01830338577027904,
-            "random_strength": 9.8182291849029,
-            "rsm": 0.6217439538129071
-        }
-    },
-    {
-        "loss": 0.5034536738997379,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.9187760262859034,
-            "border_count": 96.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 1400.0,
-            "l2_leaf_reg": 3.506564722988756,
-            "learning_rate": 0.015328132717140624,
-            "random_strength": 7.797695308360965,
-            "rsm": 0.6437323992966566
-        }
-    },
-    {
-        "loss": 0.5344437237804258,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.9518065359822717,
-            "border_count": 64.0,
-            "depth": 9.0,
-            "grow_policy": 1,
-            "iterations": 300.0,
-            "l2_leaf_reg": 5.23491261728273,
-            "learning_rate": 0.21235603321554344,
-            "random_strength": 6.0558033620265075,
-            "rsm": 0.4555387611181373
-        }
-    },
-    {
-        "loss": 0.5375936346989194,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.6587362052746287,
-            "border_count": 96.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 1300.0,
-            "l2_leaf_reg": 3.918935430707254,
-            "learning_rate": 0.029280132302217706,
-            "random_strength": 6.328829519108682,
-            "rsm": 0.5100546461849772
-        }
-    },
-    {
-        "loss": 0.520930251286664,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.7694160312574682,
-            "border_count": 32.0,
-            "depth": 7.0,
-            "grow_policy": 2,
-            "iterations": 1800.0,
-            "l2_leaf_reg": 4.9524872949586,
-            "learning_rate": 0.0410934067575401,
-            "random_strength": 6.710628859569247,
-            "rsm": 0.5431620965145866
-        }
-    },
-    {
-        "loss": 0.5106681608571648,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.9009258977443764,
-            "border_count": 96.0,
-            "depth": 8.0,
-            "grow_policy": 2,
-            "iterations": 950.0,
-            "l2_leaf_reg": 5.620750899070231,
-            "learning_rate": 0.0480859079252197,
-            "random_strength": 9.401881301572974,
-            "rsm": 0.5621903842968068
-        }
-    },
-    {
-        "loss": 0.5025393185202807,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.729054253145895,
-            "border_count": 128.0,
-            "depth": 3.0,
-            "grow_policy": 2,
-            "iterations": 1200.0,
-            "l2_leaf_reg": 6.44762676829218,
-            "learning_rate": 0.010024281491887449,
-            "random_strength": 8.23847719907003,
-            "rsm": 0.5812262879472985
-        }
-    },
-    {
-        "loss": 0.5054858844839591,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.7264965027804738,
-            "border_count": 128.0,
-            "depth": 3.0,
-            "grow_policy": 0,
-            "iterations": 1500.0,
-            "l2_leaf_reg": 6.496288527624106,
-            "learning_rate": 0.011931268371403672,
-            "random_strength": 8.328400723224643,
-            "rsm": 0.40394481272562344
-        }
-    },
-    {
-        "loss": 0.5347484469587152,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.8314569374234841,
-            "border_count": 64.0,
-            "depth": 4.0,
-            "grow_policy": 2,
-            "iterations": 1200.0,
-            "l2_leaf_reg": 8.234263525738506,
-            "learning_rate": 0.010245971504209764,
-            "random_strength": 7.29992843473753,
-            "rsm": 0.5807241566893995
-        }
-    },
-    {
-        "loss": 0.5071115910031396,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.6907627345650068,
-            "border_count": 128.0,
-            "depth": 3.0,
-            "grow_policy": 1,
             "iterations": 1600.0,
-            "l2_leaf_reg": 9.421578525742602,
-            "learning_rate": 0.022994978105679898,
-            "random_strength": 7.554504161700105,
-            "rsm": 0.3825217973898552
+            "l2_leaf_reg": 3.0062787282797627,
+            "learning_rate": 0.022848331910917046,
+            "random_strength": 7.787319819629972,
+            "rsm": 0.6177325433386943
         }
     },
     {
-        "loss": 0.5495835532494306,
+        "loss": 0.5348501349231718,
         "status": "ok",
         "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.6349839421304821,
-            "border_count": 96.0,
-            "depth": 4.0,
-            "grow_policy": 2,
-            "iterations": 1650.0,
-            "l2_leaf_reg": 7.360352055352767,
-            "learning_rate": 0.2992439036944363,
-            "random_strength": 9.444084252498099,
-            "rsm": 0.42093045173132176
-        }
-    },
-    {
-        "loss": 0.5228608978028213,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.798696706707354,
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.4901443624809828,
             "border_count": 128.0,
-            "depth": 5.0,
-            "grow_policy": 2,
-            "iterations": 1350.0,
-            "l2_leaf_reg": 7.9351347706107305,
-            "learning_rate": 0.06966458875418298,
-            "random_strength": 8.679113653577536,
-            "rsm": 0.5324123871448335
+            "depth": 7.0,
+            "grow_policy": 0,
+            "iterations": 1150.0,
+            "l2_leaf_reg": 6.29983543098381,
+            "learning_rate": 0.020358038756566475,
+            "random_strength": 8.66305105142351,
+            "rsm": 0.24261445282023542
         }
     },
     {
-        "loss": 0.5029461633004018,
+        "loss": 0.5144283234587907,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.5748660414427103,
+            "bagging_temperature": 0.5721085588377361,
             "border_count": 64.0,
             "depth": 4.0,
-            "grow_policy": 2,
-            "iterations": 1200.0,
-            "l2_leaf_reg": 8.605387262905587,
-            "learning_rate": 0.010915455040840244,
-            "random_strength": 7.0313679898275145,
-            "rsm": 0.26991209892234325
-        }
-    },
-    {
-        "loss": 0.5044701508810272,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.883622651008237,
-            "border_count": 96.0,
-            "depth": 3.0,
             "grow_policy": 0,
             "iterations": 1450.0,
-            "l2_leaf_reg": 6.850511419590937,
-            "learning_rate": 0.016349868334876873,
-            "random_strength": 9.150030011298956,
-            "rsm": 0.47476085694458464
+            "l2_leaf_reg": 4.594895029516315,
+            "learning_rate": 0.04078470363448326,
+            "random_strength": 9.033846277153929,
+            "rsm": 0.5937860964016394
         }
     },
     {
-        "loss": 0.5470435842730874,
+        "loss": 0.5326152608142967,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.05446179518096772,
+            "border_count": 160.0,
+            "depth": 6.0,
+            "grow_policy": 1,
+            "iterations": 1300.0,
+            "l2_leaf_reg": 3.9538445047176785,
+            "learning_rate": 0.17885870130214618,
+            "random_strength": 9.775161742801838,
+            "rsm": 0.40929890663310176
+        }
+    },
+    {
+        "loss": 0.5021337746522847,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.7166035793540008,
+            "border_count": 160.0,
+            "depth": 5.0,
+            "grow_policy": 0,
+            "iterations": 1200.0,
+            "l2_leaf_reg": 1.7303730911473185,
+            "learning_rate": 0.026336106682303646,
+            "random_strength": 7.491598649415285,
+            "rsm": 0.5632114323195805
+        }
+    },
+    {
+        "loss": 0.5030480371094477,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.45209000555470225,
+            "border_count": 32.0,
+            "depth": 8.0,
+            "grow_policy": 0,
+            "iterations": 1700.0,
+            "l2_leaf_reg": 5.03114329441424,
+            "learning_rate": 0.0109900618298867,
+            "random_strength": 7.86825598024607,
+            "rsm": 0.7590065410379478
+        }
+    },
+    {
+        "loss": 0.5400323493481811,
         "status": "ok",
         "params": {
             "auto_class_weights": 1,
-            "bagging_temperature": 0.614825115548323,
+            "bagging_temperature": 0.6185034536063433,
+            "border_count": 192.0,
+            "depth": 4.0,
+            "grow_policy": 0,
+            "iterations": 1900.0,
+            "l2_leaf_reg": 4.249597765429642,
+            "learning_rate": 0.014320731829357076,
+            "random_strength": 6.812414750981076,
+            "rsm": 0.6356453783313792
+        }
+    },
+    {
+        "loss": 0.5168663876519899,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.5260740342693095,
+            "border_count": 128.0,
+            "depth": 6.0,
+            "grow_policy": 0,
+            "iterations": 1000.0,
+            "l2_leaf_reg": 2.790809446761294,
+            "learning_rate": 0.055635988036765165,
+            "random_strength": 6.098083940580611,
+            "rsm": 0.35576680237132263
+        }
+    },
+    {
+        "loss": 0.5022349360570717,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.908876103875125,
+            "border_count": 192.0,
+            "depth": 7.0,
+            "grow_policy": 1,
+            "iterations": 450.0,
+            "l2_leaf_reg": 7.671073233520586,
+            "learning_rate": 0.03638324007532947,
+            "random_strength": 5.759911903520937,
+            "rsm": 0.5317411628173041
+        }
+    },
+    {
+        "loss": 0.5135133795714673,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.65090859842378,
+            "border_count": 64.0,
+            "depth": 9.0,
+            "grow_policy": 0,
+            "iterations": 1100.0,
+            "l2_leaf_reg": 3.1732798371619104,
+            "learning_rate": 0.03131094409341709,
+            "random_strength": 5.56802373956107,
+            "rsm": 0.6757281266548499
+        }
+    },
+    {
+        "loss": 0.5014219589010886,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.869195984085536,
+            "border_count": 96.0,
+            "depth": 3.0,
+            "grow_policy": 0,
+            "iterations": 1250.0,
+            "l2_leaf_reg": 3.7455265556545307,
+            "learning_rate": 0.029087745725848074,
+            "random_strength": 9.585835333985907,
+            "rsm": 0.5108363434466646
+        }
+    },
+    {
+        "loss": 0.534444033521408,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.6016621678498805,
+            "border_count": 224.0,
+            "depth": 7.0,
+            "grow_policy": 0,
+            "iterations": 950.0,
+            "l2_leaf_reg": 1.3189220028449447,
+            "learning_rate": 0.018317855994501545,
+            "random_strength": 6.410176833550608,
+            "rsm": 0.580544351223001
+        }
+    },
+    {
+        "loss": 0.5309897711138039,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.9773269724104932,
+            "border_count": 256.0,
+            "depth": 5.0,
+            "grow_policy": 0,
+            "iterations": 1550.0,
+            "l2_leaf_reg": 1.9558904503794263,
+            "learning_rate": 0.1475431821198321,
+            "random_strength": 8.291055624600872,
+            "rsm": 0.6569200742455137
+        }
+    },
+    {
+        "loss": 0.5059942004098492,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.37386287078487607,
+            "border_count": 192.0,
+            "depth": 6.0,
+            "grow_policy": 1,
+            "iterations": 1400.0,
+            "l2_leaf_reg": 3.5629947364917034,
+            "learning_rate": 0.011723421427026072,
+            "random_strength": 7.2104196554243725,
+            "rsm": 0.6984573260907948
+        }
+    },
+    {
+        "loss": 0.5050795972376061,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.8146225992609896,
+            "border_count": 256.0,
+            "depth": 9.0,
+            "grow_policy": 0,
+            "iterations": 250.0,
+            "l2_leaf_reg": 5.831337940587571,
+            "learning_rate": 0.021627197537390352,
+            "random_strength": 8.864646846203657,
+            "rsm": 0.7778895882805801
+        }
+    },
+    {
+        "loss": 0.5027430661383725,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.7856538547801584,
+            "border_count": 160.0,
+            "depth": 4.0,
+            "grow_policy": 0,
+            "iterations": 800.0,
+            "l2_leaf_reg": 2.6044663010064397,
+            "learning_rate": 0.016554592689343332,
+            "random_strength": 9.17608097257161,
+            "rsm": 0.42149179340063114
+        }
+    },
+    {
+        "loss": 0.5195076729036112,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.689325538648831,
+            "border_count": 192.0,
+            "depth": 10.0,
+            "grow_policy": 0,
+            "iterations": 600.0,
+            "l2_leaf_reg": 5.664554723992984,
+            "learning_rate": 0.10084165878813126,
+            "random_strength": 5.008936266195757,
+            "rsm": 0.3321435647139066
+        }
+    },
+    {
+        "loss": 0.5236741227515902,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.19943456379648178,
+            "border_count": 128.0,
+            "depth": 8.0,
+            "grow_policy": 1,
+            "iterations": 1050.0,
+            "l2_leaf_reg": 4.874738337032312,
+            "learning_rate": 0.03471877436026711,
+            "random_strength": 3.8858744375768763,
+            "rsm": 0.46671572012567336
+        }
+    },
+    {
+        "loss": 0.5224549512715486,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.6309448226469557,
+            "border_count": 224.0,
+            "depth": 6.0,
+            "grow_policy": 0,
+            "iterations": 1700.0,
+            "l2_leaf_reg": 2.2196766597988757,
+            "learning_rate": 0.05014765754714216,
+            "random_strength": 6.653821249516986,
+            "rsm": 0.27048030325700845
+        }
+    },
+    {
+        "loss": 0.5212362444029806,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.25204873215417545,
+            "border_count": 256.0,
+            "depth": 3.0,
+            "grow_policy": 0,
+            "iterations": 1200.0,
+            "l2_leaf_reg": 1.0174668534818747,
+            "learning_rate": 0.07099340839207605,
+            "random_strength": 9.992624892740082,
+            "rsm": 0.6466299913280262
+        }
+    },
+    {
+        "loss": 0.5053848160014669,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.29466331265742407,
+            "border_count": 224.0,
+            "depth": 7.0,
+            "grow_policy": 0,
+            "iterations": 850.0,
+            "l2_leaf_reg": 5.178865070707505,
+            "learning_rate": 0.024719593094130948,
+            "random_strength": 3.259629572180428,
+            "rsm": 0.4532941320107511
+        }
+    },
+    {
+        "loss": 0.5019299650859965,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.5468691135694074,
+            "border_count": 32.0,
+            "depth": 5.0,
+            "grow_policy": 0,
+            "iterations": 900.0,
+            "l2_leaf_reg": 4.695474790464609,
+            "learning_rate": 0.010069690389741115,
+            "random_strength": 4.367419831658639,
+            "rsm": 0.592631676049123
+        }
+    },
+    {
+        "loss": 0.5336312422100142,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.759914594980938,
+            "border_count": 64.0,
+            "depth": 8.0,
+            "grow_policy": 1,
+            "iterations": 700.0,
+            "l2_leaf_reg": 3.317600349293977,
+            "learning_rate": 0.015198760991771802,
+            "random_strength": 4.776783402617106,
+            "rsm": 0.20069373091763187
+        }
+    },
+    {
+        "loss": 0.5093475492054524,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.32480696094953404,
+            "border_count": 160.0,
+            "depth": 3.0,
+            "grow_policy": 0,
+            "iterations": 1300.0,
+            "l2_leaf_reg": 1.555021952309653,
+            "learning_rate": 0.03951244956594141,
+            "random_strength": 6.955914960306492,
+            "rsm": 0.3871486708063703
+        }
+    },
+    {
+        "loss": 0.5011171737746027,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.9416185080914471,
+            "border_count": 256.0,
+            "depth": 6.0,
+            "grow_policy": 0,
+            "iterations": 1600.0,
+            "l2_leaf_reg": 8.895605123697884,
+            "learning_rate": 0.01765839199522868,
+            "random_strength": 7.979250647622619,
+            "rsm": 0.48899894827147367
+        }
+    },
+    {
+        "loss": 0.5028449089733202,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.9317747385808344,
+            "border_count": 224.0,
+            "depth": 9.0,
+            "grow_policy": 0,
+            "iterations": 1800.0,
+            "l2_leaf_reg": 8.319595178390278,
+            "learning_rate": 0.012916628686217475,
+            "random_strength": 7.376897591579565,
+            "rsm": 0.49426251470099025
+        }
+    },
+    {
+        "loss": 0.5129043358781653,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.96138918924564,
+            "border_count": 256.0,
+            "depth": 4.0,
+            "grow_policy": 0,
+            "iterations": 1650.0,
+            "l2_leaf_reg": 9.696810011099352,
+            "learning_rate": 0.04717070777121744,
+            "random_strength": 8.04111804607331,
+            "rsm": 0.3636850034424301
+        }
+    },
+    {
+        "loss": 0.5313969875831035,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.9124364890873977,
+            "border_count": 64.0,
+            "depth": 7.0,
+            "grow_policy": 0,
+            "iterations": 2000.0,
+            "l2_leaf_reg": 8.713402533111658,
+            "learning_rate": 0.055468010125183945,
+            "random_strength": 8.669815804498443,
+            "rsm": 0.5485305726989526
+        }
+    },
+    {
+        "loss": 0.5091443900952268,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.834205960944781,
+            "border_count": 96.0,
+            "depth": 10.0,
+            "grow_policy": 1,
+            "iterations": 1750.0,
+            "l2_leaf_reg": 8.963670626399816,
+            "learning_rate": 0.01696488546776319,
+            "random_strength": 8.483440030571101,
+            "rsm": 0.5616535664320765
+        }
+    },
+    {
+        "loss": 0.5149354933430468,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.12328305195949968,
+            "border_count": 160.0,
+            "depth": 5.0,
+            "grow_policy": 0,
+            "iterations": 1950.0,
+            "l2_leaf_reg": 7.811003813173908,
+            "learning_rate": 0.022544208811649404,
+            "random_strength": 7.700215985823641,
+            "rsm": 0.5184486494336987
+        }
+    },
+    {
+        "loss": 0.5052830351147157,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.9407207216481566,
+            "border_count": 192.0,
+            "depth": 6.0,
+            "grow_policy": 2,
+            "iterations": 1500.0,
+            "l2_leaf_reg": 9.230043828225055,
+            "learning_rate": 0.018206701196774207,
+            "random_strength": 7.978401873959432,
+            "rsm": 0.5754025873857475
+        }
+    },
+    {
+        "loss": 0.505485853509861,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.9984925484822011,
+            "border_count": 224.0,
+            "depth": 9.0,
+            "grow_policy": 0,
+            "iterations": 1900.0,
+            "l2_leaf_reg": 6.381953889293504,
+            "learning_rate": 0.013793836354003379,
+            "random_strength": 9.691809411877356,
+            "rsm": 0.6164925070842777
+        }
+    },
+    {
+        "loss": 0.53545976712434,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.7324498868120007,
+            "border_count": 256.0,
+            "depth": 8.0,
+            "grow_policy": 0,
+            "iterations": 1600.0,
+            "l2_leaf_reg": 7.090873172775049,
+            "learning_rate": 0.010793472158386675,
+            "random_strength": 9.316221894000908,
+            "rsm": 0.471378719098142
+        }
+    },
+    {
+        "loss": 0.501422020849285,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.8529421993662986,
+            "border_count": 128.0,
+            "depth": 3.0,
+            "grow_policy": 0,
+            "iterations": 1800.0,
+            "l2_leaf_reg": 6.737476831027633,
+            "learning_rate": 0.011882456644402021,
+            "random_strength": 7.5117244775091665,
+            "rsm": 0.4373135306412009
+        }
+    },
+    {
+        "loss": 0.5094492991181054,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.8022850843609233,
+            "border_count": 160.0,
+            "depth": 10.0,
+            "grow_policy": 1,
+            "iterations": 1550.0,
+            "l2_leaf_reg": 7.542344116882291,
+            "learning_rate": 0.020592830312372877,
+            "random_strength": 9.013956039711335,
+            "rsm": 0.4949883376797033
+        }
+    },
+    {
+        "loss": 0.5206260546680443,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.8815353191912825,
+            "border_count": 256.0,
+            "depth": 7.0,
+            "grow_policy": 2,
+            "iterations": 1450.0,
+            "l2_leaf_reg": 8.531115465044621,
+            "learning_rate": 0.08035561027834615,
+            "random_strength": 5.290990567125007,
+            "rsm": 0.5343375873306488
+        }
+    },
+    {
+        "loss": 0.5060959812966006,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.1511155287708288,
+            "border_count": 96.0,
+            "depth": 5.0,
+            "grow_policy": 0,
+            "iterations": 1350.0,
+            "l2_leaf_reg": 6.023682545337012,
+            "learning_rate": 0.015902182715457038,
+            "random_strength": 6.073290401822347,
+            "rsm": 0.3748527012210593
+        }
+    },
+    {
+        "loss": 0.5364768326134952,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.9756181238514927,
+            "border_count": 192.0,
+            "depth": 6.0,
+            "grow_policy": 0,
+            "iterations": 1150.0,
+            "l2_leaf_reg": 9.546045600890947,
+            "learning_rate": 0.02812897206415601,
+            "random_strength": 7.1383050727619235,
+            "rsm": 0.41361859232700815
+        }
+    },
+    {
+        "loss": 0.5123954004703106,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.09284234620587128,
+            "border_count": 32.0,
+            "depth": 4.0,
+            "grow_policy": 0,
+            "iterations": 1900.0,
+            "l2_leaf_reg": 7.303035058113051,
+            "learning_rate": 0.025564724395108818,
+            "random_strength": 8.302563769930769,
+            "rsm": 0.48201141803959496
+        }
+    },
+    {
+        "loss": 0.5075185596796534,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.8252462539965278,
+            "border_count": 192.0,
+            "depth": 7.0,
+            "grow_policy": 0,
+            "iterations": 1450.0,
+            "l2_leaf_reg": 5.364677751362883,
+            "learning_rate": 0.029833406550165274,
+            "random_strength": 6.432980367878502,
+            "rsm": 0.5106799313426696
+        }
+    },
+    {
+        "loss": 0.5432849394022743,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.7104414346086708,
             "border_count": 96.0,
             "depth": 3.0,
             "grow_policy": 2,
-            "iterations": 1900.0,
-            "l2_leaf_reg": 6.595973505135559,
-            "learning_rate": 0.05368749411186685,
-            "random_strength": 7.555167105944298,
-            "rsm": 0.6177107970108102
+            "iterations": 1750.0,
+            "l2_leaf_reg": 7.830437185893173,
+            "learning_rate": 0.2142739675547829,
+            "random_strength": 6.790257378950376,
+            "rsm": 0.6292204092641739
         }
     },
     {
-        "loss": 0.5054862561731377,
+        "loss": 0.5031492914365292,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.9836525744035195,
-            "border_count": 96.0,
+            "bagging_temperature": 0.40527439944410837,
+            "border_count": 256.0,
             "depth": 4.0,
             "grow_policy": 1,
-            "iterations": 1050.0,
-            "l2_leaf_reg": 9.223641120793992,
-            "learning_rate": 0.013764667878745482,
-            "random_strength": 8.262135170423397,
-            "rsm": 0.5917765046906144
+            "iterations": 1500.0,
+            "l2_leaf_reg": 7.983643943505707,
+            "learning_rate": 0.010072194093513225,
+            "random_strength": 5.578612614829055,
+            "rsm": 0.6041955562478878
         }
     },
     {
-        "loss": 0.5100584047596037,
+        "loss": 0.5270269449875236,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 1,
+            "bagging_temperature": 0.500800335919386,
+            "border_count": 224.0,
+            "depth": 8.0,
+            "grow_policy": 0,
+            "iterations": 1650.0,
+            "l2_leaf_reg": 9.950014011519396,
+            "learning_rate": 0.019145045057087078,
+            "random_strength": 8.768511289943477,
+            "rsm": 0.5475365539346758
+        }
+    },
+    {
+        "loss": 0.5106683776758523,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.5171684206758166,
-            "border_count": 128.0,
+            "bagging_temperature": 0.5644176291643697,
+            "border_count": 160.0,
+            "depth": 8.0,
+            "grow_policy": 0,
+            "iterations": 1400.0,
+            "l2_leaf_reg": 4.407472760808342,
+            "learning_rate": 0.03290354651534176,
+            "random_strength": 7.006624094146748,
+            "rsm": 0.6852399482617677
+        }
+    },
+    {
+        "loss": 0.5331239484293655,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.6687410062438888,
+            "border_count": 256.0,
             "depth": 5.0,
+            "grow_policy": 0,
+            "iterations": 1600.0,
+            "l2_leaf_reg": 8.958007535700656,
+            "learning_rate": 0.11544370608872319,
+            "random_strength": 7.38449420628271,
+            "rsm": 0.5846012766321821
+        }
+    },
+    {
+        "loss": 0.5102622452999903,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.4424412759773867,
+            "border_count": 128.0,
+            "depth": 10.0,
+            "grow_policy": 0,
+            "iterations": 1850.0,
+            "l2_leaf_reg": 4.174206033438172,
+            "learning_rate": 0.023258577350476102,
+            "random_strength": 5.910365778354302,
+            "rsm": 0.4038242777468559
+        }
+    },
+    {
+        "loss": 0.5036572666473389,
+        "status": "ok",
+        "params": {
+            "auto_class_weights": 0,
+            "bagging_temperature": 0.5905345260732396,
+            "border_count": 192.0,
+            "depth": 9.0,
             "grow_policy": 2,
             "iterations": 1250.0,
-            "l2_leaf_reg": 6.083001465996492,
-            "learning_rate": 0.024970253255772807,
-            "random_strength": 5.895468554158096,
-            "rsm": 0.6589607515627433
+            "l2_leaf_reg": 5.552568994073903,
+            "learning_rate": 0.01287952001415354,
+            "random_strength": 9.453695672410408,
+            "rsm": 0.5683247697116756
         }
     },
     {
-        "loss": 0.5168658301182221,
+        "loss": 0.5046736816804316,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.7247173230981355,
-            "border_count": 32.0,
+            "bagging_temperature": 0.7464255669254358,
+            "border_count": 256.0,
             "depth": 6.0,
-            "grow_policy": 2,
-            "iterations": 1700.0,
-            "l2_leaf_reg": 5.406267297251671,
-            "learning_rate": 0.03795967430857703,
-            "random_strength": 6.93070837298457,
-            "rsm": 0.6315662513561022
-        }
-    },
-    {
-        "loss": 0.5201172431565828,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.8607380272936404,
-            "border_count": 64.0,
-            "depth": 6.0,
-            "grow_policy": 2,
-            "iterations": 100.0,
-            "l2_leaf_reg": 5.773555788149953,
-            "learning_rate": 0.019824910396469945,
-            "random_strength": 9.965136112292754,
-            "rsm": 0.5745054684183383
-        }
-    },
-    {
-        "loss": 0.5386097090169317,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.5925896481660039,
-            "border_count": 128.0,
-            "depth": 4.0,
             "grow_policy": 0,
-            "iterations": 1350.0,
-            "l2_leaf_reg": 7.144942482909761,
-            "learning_rate": 0.012606129213151622,
-            "random_strength": 6.247106108953772,
-            "rsm": 0.44020513914439324
-        }
-    },
-    {
-        "loss": 0.5346480289322857,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.8004824090725859,
-            "border_count": 64.0,
-            "depth": 5.0,
-            "grow_policy": 2,
-            "iterations": 2000.0,
-            "l2_leaf_reg": 7.799333013891433,
-            "learning_rate": 0.09088481839021388,
-            "random_strength": 7.878850606296664,
-            "rsm": 0.7210421912431064
-        }
-    },
-    {
-        "loss": 0.5299732321843182,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.7662843511004999,
-            "border_count": 128.0,
-            "depth": 5.0,
-            "grow_policy": 1,
             "iterations": 1100.0,
-            "l2_leaf_reg": 7.009714945430796,
-            "learning_rate": 0.12288555186581178,
-            "random_strength": 5.4961044038117555,
-            "rsm": 0.7032813622484266
+            "l2_leaf_reg": 4.035280831750076,
+            "learning_rate": 0.013973797673254471,
+            "random_strength": 0.3368593791801855,
+            "rsm": 0.33898513770813155
         }
     },
     {
-        "loss": 0.5047746262665309,
+        "loss": 0.5024379402968062,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.9266569922528444,
-            "border_count": 96.0,
-            "depth": 3.0,
-            "grow_policy": 2,
-            "iterations": 800.0,
-            "l2_leaf_reg": 7.535370377385228,
-            "learning_rate": 0.01601440746990417,
-            "random_strength": 9.718361110229553,
-            "rsm": 0.6815405003299886
-        }
-    },
-    {
-        "loss": 0.5059940765134565,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.99532332286596,
-            "border_count": 160.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 1550.0,
-            "l2_leaf_reg": 9.644702670970378,
-            "learning_rate": 0.03145307748034864,
-            "random_strength": 5.26361949531034,
-            "rsm": 0.7886264349894736
-        }
-    },
-    {
-        "loss": 0.538711644774174,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.6731713046463448,
-            "border_count": 128.0,
-            "depth": 9.0,
-            "grow_policy": 2,
-            "iterations": 1000.0,
-            "l2_leaf_reg": 4.432910305713676,
-            "learning_rate": 0.02231501628161391,
-            "random_strength": 6.575493549925068,
-            "rsm": 0.6434327128979347
-        }
-    },
-    {
-        "loss": 0.5031493533847256,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.9654791474787132,
-            "border_count": 96.0,
-            "depth": 4.0,
-            "grow_policy": 0,
-            "iterations": 450.0,
-            "l2_leaf_reg": 6.334569292428868,
-            "learning_rate": 0.02638108529715062,
-            "random_strength": 8.840350821462827,
-            "rsm": 0.7471943004812973
-        }
-    },
-    {
-        "loss": 0.505079442367115,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.7452565550240111,
-            "border_count": 160.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 1300.0,
-            "l2_leaf_reg": 4.049459326006801,
-            "learning_rate": 0.010194915160394226,
-            "random_strength": 7.416371871284892,
-            "rsm": 0.5429336829537199
-        }
-    },
-    {
-        "loss": 0.5313954698522907,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.494770005069033,
-            "border_count": 64.0,
-            "depth": 7.0,
-            "grow_policy": 2,
-            "iterations": 200.0,
-            "l2_leaf_reg": 4.192316647998283,
-            "learning_rate": 0.2313797959215812,
-            "random_strength": 6.847979692623204,
-            "rsm": 0.5294496892112462
-        }
-    },
-    {
-        "loss": 0.5213367553517048,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.5598981651708412,
-            "border_count": 128.0,
-            "depth": 9.0,
-            "grow_policy": 1,
-            "iterations": 1150.0,
-            "l2_leaf_reg": 5.021772596478694,
-            "learning_rate": 0.0985186741142307,
-            "random_strength": 8.507992317391636,
-            "rsm": 0.4618508818503986
-        }
-    },
-    {
-        "loss": 0.5373903516923009,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.6533518375603674,
-            "border_count": 128.0,
-            "depth": 9.0,
-            "grow_policy": 2,
-            "iterations": 1450.0,
-            "l2_leaf_reg": 3.3390354275672838,
-            "learning_rate": 0.01734877736733721,
-            "random_strength": 5.005403066345734,
-            "rsm": 0.3101496512054126
-        }
-    },
-    {
-        "loss": 0.5275345485091547,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.8470464406874134,
-            "border_count": 160.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 650.0,
-            "l2_leaf_reg": 8.960153806999807,
-            "learning_rate": 0.1594550650256935,
-            "random_strength": 8.075351270445092,
-            "rsm": 0.34151969665933085
-        }
-    },
-    {
-        "loss": 0.5042667130039176,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.821250914419835,
-            "border_count": 96.0,
-            "depth": 7.0,
-            "grow_policy": 0,
-            "iterations": 900.0,
-            "l2_leaf_reg": 4.629625153547265,
-            "learning_rate": 0.019167212161552354,
-            "random_strength": 5.753714700959888,
-            "rsm": 0.6639582180065664
-        }
-    },
-    {
-        "loss": 0.5058929460827677,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.8954681932107934,
-            "border_count": 160.0,
+            "bagging_temperature": 0.7718282292947333,
+            "border_count": 256.0,
             "depth": 6.0,
-            "grow_policy": 2,
-            "iterations": 500.0,
-            "l2_leaf_reg": 8.486178860557706,
-            "learning_rate": 0.043017034792082944,
-            "random_strength": 9.196458278517122,
-            "rsm": 0.5993366232354937
-        }
-    },
-    {
-        "loss": 0.5103638713162504,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.4491369587634975,
-            "border_count": 32.0,
-            "depth": 10.0,
-            "grow_policy": 1,
+            "grow_policy": 0,
             "iterations": 1050.0,
-            "l2_leaf_reg": 2.724111209075881,
-            "learning_rate": 0.02086491062350688,
-            "random_strength": 4.586056713783112,
-            "rsm": 0.4853837893789257
+            "l2_leaf_reg": 3.5067012066753316,
+            "learning_rate": 0.01196975079676735,
+            "random_strength": 7.89095161376623,
+            "rsm": 0.6399016084865936
         }
     },
     {
-        "loss": 0.5343418499713799,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 1,
-            "bagging_temperature": 0.94505795051574,
-            "border_count": 64.0,
-            "depth": 3.0,
-            "grow_policy": 2,
-            "iterations": 300.0,
-            "l2_leaf_reg": 3.6858288624280995,
-            "learning_rate": 0.01180607155755105,
-            "random_strength": 6.147202966237194,
-            "rsm": 0.7356610821656556
-        }
-    },
-    {
-        "loss": 0.5069085248152085,
+        "loss": 0.5025394733907718,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.6917480966788333,
-            "border_count": 96.0,
-            "depth": 8.0,
-            "grow_policy": 2,
-            "iterations": 1400.0,
-            "l2_leaf_reg": 2.332469798635673,
-            "learning_rate": 0.014362945724959483,
-            "random_strength": 9.58880643294812,
-            "rsm": 0.5077736218850286
+            "bagging_temperature": 0.6509710653322497,
+            "border_count": 256.0,
+            "depth": 6.0,
+            "grow_policy": 0,
+            "iterations": 750.0,
+            "l2_leaf_reg": 3.0200435469194966,
+            "learning_rate": 0.014890383142307093,
+            "random_strength": 7.668369113573976,
+            "rsm": 0.6718830307285912
         }
     },
     {
-        "loss": 0.5075178163012961,
+        "loss": 0.5021334958854009,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.8765874212013555,
-            "border_count": 128.0,
-            "depth": 4.0,
-            "grow_policy": 2,
-            "iterations": 600.0,
-            "l2_leaf_reg": 5.154304285040182,
-            "learning_rate": 0.047121738382571506,
-            "random_strength": 7.1653408888943835,
-            "rsm": 0.5498862239679618
+            "bagging_temperature": 0.6885130223066892,
+            "border_count": 256.0,
+            "depth": 6.0,
+            "grow_policy": 0,
+            "iterations": 1300.0,
+            "l2_leaf_reg": 3.9024335387518976,
+            "learning_rate": 0.011404520754088722,
+            "random_strength": 8.466665340398977,
+            "rsm": 0.516630070190743
         }
     },
     {
-        "loss": 0.5040634919454956,
+        "loss": 0.5021329383516329,
         "status": "ok",
         "params": {
             "auto_class_weights": 0,
-            "bagging_temperature": 0.717202654856485,
-            "border_count": 160.0,
+            "bagging_temperature": 0.477796821963135,
+            "border_count": 224.0,
             "depth": 5.0,
             "grow_policy": 0,
-            "iterations": 250.0,
-            "l2_leaf_reg": 6.005188129935999,
-            "learning_rate": 0.03552951812746346,
-            "random_strength": 3.9462071921522517,
-            "rsm": 0.5837649102891764
-        }
-    },
-    {
-        "loss": 0.5183907159476959,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.6277517473215521,
-            "border_count": 96.0,
-            "depth": 9.0,
-            "grow_policy": 2,
-            "iterations": 850.0,
-            "l2_leaf_reg": 3.5281674118722357,
-            "learning_rate": 0.060802755214205584,
-            "random_strength": 7.721359304597889,
-            "rsm": 0.6967947366157855
-        }
-    },
-    {
-        "loss": 0.5037586758449115,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.4316331758154537,
-            "border_count": 192.0,
-            "depth": 8.0,
-            "grow_policy": 2,
-            "iterations": 700.0,
-            "l2_leaf_reg": 4.79388843209322,
-            "learning_rate": 0.015054157950586644,
-            "random_strength": 4.163826177697426,
-            "rsm": 0.6116323494928473
-        }
-    },
-    {
-        "loss": 0.5061972975718785,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.4764923869902637,
-            "border_count": 160.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 750.0,
-            "l2_leaf_reg": 5.496501209490845,
-            "learning_rate": 0.018023724501922928,
-            "random_strength": 2.3323314640303563,
-            "rsm": 0.5706940411297116
-        }
-    },
-    {
-        "loss": 0.5043685558388653,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.2527542602351952,
-            "border_count": 192.0,
-            "depth": 9.0,
-            "grow_policy": 2,
-            "iterations": 400.0,
-            "l2_leaf_reg": 3.11538202468938,
-            "learning_rate": 0.01295493600143907,
-            "random_strength": 3.230536609154001,
-            "rsm": 0.6072206807000373
-        }
-    },
-    {
-        "loss": 0.5040638016864778,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.38564426806380586,
-            "border_count": 128.0,
-            "depth": 10.0,
-            "grow_policy": 2,
-            "iterations": 550.0,
-            "l2_leaf_reg": 3.8714839328140265,
-            "learning_rate": 0.011126805732581865,
-            "random_strength": 3.6775186146039283,
-            "rsm": 0.6278802663224204
-        }
-    },
-    {
-        "loss": 0.5035557645274715,
-        "status": "ok",
-        "params": {
-            "auto_class_weights": 0,
-            "bagging_temperature": 0.15507144297839534,
-            "border_count": 160.0,
-            "depth": 7.0,
-            "grow_policy": 2,
             "iterations": 950.0,
-            "l2_leaf_reg": 4.173077439219248,
-            "learning_rate": 0.010058134196882422,
-            "random_strength": 4.695230809340978,
-            "rsm": 0.6772478506904812
+            "l2_leaf_reg": 3.6616274787731236,
+            "learning_rate": 0.017440832166843022,
+            "random_strength": 3.6462713146101122,
+            "rsm": 0.46165109528108933
         }
     }
 ]
