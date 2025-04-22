@@ -1,0 +1,1002 @@
+[
+    {
+        "loss": 0.5054867731418431,
+        "status": "ok",
+        "params": {
+            "n_components": 10.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.3675871543376206,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5052834179357022,
+        "status": "ok",
+        "params": {
+            "n_components": 85.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5056904378688457,
+        "status": "ok",
+        "params": {
+            "n_components": 80.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.362046521998751,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5050799595559408,
+        "status": "ok",
+        "params": {
+            "n_components": 85.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.2587758507905882,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5059950063967644,
+        "status": "ok",
+        "params": {
+            "n_components": 90.0,
+            "shrinkage": 0,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5032506912632577,
+        "status": "ok",
+        "params": {
+            "n_components": 20.0,
+            "shrinkage": 0,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5018294746399241,
+        "status": "ok",
+        "params": {
+            "n_components": 65.0,
+            "shrinkage": 0,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5079251784903637,
+        "status": "ok",
+        "params": {
+            "n_components": 5.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.6289629220415952,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5018284429037184,
+        "status": "ok",
+        "params": {
+            "n_components": 15.0,
+            "shrinkage": 0,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5016270479963684,
+        "status": "ok",
+        "params": {
+            "n_components": 40.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5039641368494904,
+        "status": "ok",
+        "params": {
+            "n_components": 45.0,
+            "shrinkage": 0,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5052838306301844,
+        "status": "ok",
+        "params": {
+            "n_components": 100.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.2209269556093429,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5059950063967644,
+        "status": "ok",
+        "params": {
+            "n_components": 90.0,
+            "shrinkage": 0,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5050808881185258,
+        "status": "ok",
+        "params": {
+            "n_components": 80.0,
+            "shrinkage": 0,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5047757005488837,
+        "status": "ok",
+        "params": {
+            "n_components": 85.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.6952656564958098,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5047763195906071,
+        "status": "ok",
+        "params": {
+            "n_components": 55.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.501016879204325,
+        "status": "ok",
+        "params": {
+            "n_components": 70.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5039641368494904,
+        "status": "ok",
+        "params": {
+            "n_components": 45.0,
+            "shrinkage": 0,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.503455387726466,
+        "status": "ok",
+        "params": {
+            "n_components": 75.0,
+            "shrinkage": 0,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5027432833973009,
+        "status": "ok",
+        "params": {
+            "n_components": 25.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5038619949651273,
+        "status": "ok",
+        "params": {
+            "n_components": 30.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5055882959844827,
+        "status": "ok",
+        "params": {
+            "n_components": 35.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5011184020469647,
+        "status": "ok",
+        "params": {
+            "n_components": 65.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5011184020469647,
+        "status": "ok",
+        "params": {
+            "n_components": 65.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5034547686847427,
+        "status": "ok",
+        "params": {
+            "n_components": 60.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.501016879204325,
+        "status": "ok",
+        "params": {
+            "n_components": 70.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.501016879204325,
+        "status": "ok",
+        "params": {
+            "n_components": 70.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5047763195906071,
+        "status": "ok",
+        "params": {
+            "n_components": 55.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5062995749246832,
+        "status": "ok",
+        "params": {
+            "n_components": 100.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5019311006561843,
+        "status": "ok",
+        "params": {
+            "n_components": 75.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5032514134786018,
+        "status": "ok",
+        "params": {
+            "n_components": 50.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5047757005488837,
+        "status": "ok",
+        "params": {
+            "n_components": 95.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5019311006561843,
+        "status": "ok",
+        "params": {
+            "n_components": 75.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5028456316289052,
+        "status": "ok",
+        "params": {
+            "n_components": 60.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.9676790349296186,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5034543559902604,
+        "status": "ok",
+        "params": {
+            "n_components": 80.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.501016879204325,
+        "status": "ok",
+        "params": {
+            "n_components": 70.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5060966324130247,
+        "status": "ok",
+        "params": {
+            "n_components": 90.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.004950210631044592,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5034547686847427,
+        "status": "ok",
+        "params": {
+            "n_components": 60.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.504978952581404,
+        "status": "ok",
+        "params": {
+            "n_components": 85.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.9962306184305915,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5037609879905905,
+        "status": "ok",
+        "params": {
+            "n_components": 45.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.501016879204325,
+        "status": "ok",
+        "params": {
+            "n_components": 70.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5054866699682226,
+        "status": "ok",
+        "params": {
+            "n_components": 95.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.04213612394254337,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.506096322892163,
+        "status": "ok",
+        "params": {
+            "n_components": 10.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5045722421691222,
+        "status": "ok",
+        "params": {
+            "n_components": 55.0,
+            "shrinkage": 0,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5032514134786018,
+        "status": "ok",
+        "params": {
+            "n_components": 50.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5046738681853824,
+        "status": "ok",
+        "params": {
+            "n_components": 95.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.8044557443052717,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5019319260451488,
+        "status": "ok",
+        "params": {
+            "n_components": 40.0,
+            "shrinkage": 0,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5034543559902604,
+        "status": "ok",
+        "params": {
+            "n_components": 80.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5018294746399241,
+        "status": "ok",
+        "params": {
+            "n_components": 65.0,
+            "shrinkage": 0,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5061982584292848,
+        "status": "ok",
+        "params": {
+            "n_components": 90.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.504876810697041,
+        "status": "ok",
+        "params": {
+            "n_components": 85.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.5322582674310217,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5039622797243201,
+        "status": "ok",
+        "params": {
+            "n_components": 20.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5019319260451488,
+        "status": "ok",
+        "params": {
+            "n_components": 40.0,
+            "shrinkage": 0,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.501016879204325,
+        "status": "ok",
+        "params": {
+            "n_components": 70.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5034543559902604,
+        "status": "ok",
+        "params": {
+            "n_components": 80.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5032514134786018,
+        "status": "ok",
+        "params": {
+            "n_components": 50.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.503455181379225,
+        "status": "ok",
+        "params": {
+            "n_components": 35.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.8913057811859019,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.503455387726466,
+        "status": "ok",
+        "params": {
+            "n_components": 75.0,
+            "shrinkage": 0,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5034547686847427,
+        "status": "ok",
+        "params": {
+            "n_components": 60.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5052834179357022,
+        "status": "ok",
+        "params": {
+            "n_components": 85.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5019311006561843,
+        "status": "ok",
+        "params": {
+            "n_components": 75.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5010172918988073,
+        "status": "ok",
+        "params": {
+            "n_components": 70.0,
+            "shrinkage": 0,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5047763195906071,
+        "status": "ok",
+        "params": {
+            "n_components": 55.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5016265321282655,
+        "status": "ok",
+        "params": {
+            "n_components": 65.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.10135200853130419,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5062995749246832,
+        "status": "ok",
+        "params": {
+            "n_components": 100.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.501016879204325,
+        "status": "ok",
+        "params": {
+            "n_components": 70.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5034547686847427,
+        "status": "ok",
+        "params": {
+            "n_components": 60.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5011184020469647,
+        "status": "ok",
+        "params": {
+            "n_components": 65.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5037609879905905,
+        "status": "ok",
+        "params": {
+            "n_components": 45.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5034543559902604,
+        "status": "ok",
+        "params": {
+            "n_components": 80.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.501016879204325,
+        "status": "ok",
+        "params": {
+            "n_components": 70.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5061982584292848,
+        "status": "ok",
+        "params": {
+            "n_components": 90.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5019311006561843,
+        "status": "ok",
+        "params": {
+            "n_components": 75.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5047763195906071,
+        "status": "ok",
+        "params": {
+            "n_components": 55.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5032514134786018,
+        "status": "ok",
+        "params": {
+            "n_components": 50.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5034547686847427,
+        "status": "ok",
+        "params": {
+            "n_components": 60.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.5034543559902604,
+        "status": "ok",
+        "params": {
+            "n_components": 80.0,
+            "shrinkage": 1,
+            "shrinkage_val": null,
+            "solver": 0
+        }
+    },
+    {
+        "loss": 0.500406916759523,
+        "status": "ok",
+        "params": {
+            "n_components": 65.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.7551511728418592,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.503354690272791,
+        "status": "ok",
+        "params": {
+            "n_components": 45.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.7033774528462925,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5036582270645041,
+        "status": "ok",
+        "params": {
+            "n_components": 35.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.5291736511300911,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.500406916759523,
+        "status": "ok",
+        "params": {
+            "n_components": 65.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.8541637333655794,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5005085427757832,
+        "status": "ok",
+        "params": {
+            "n_components": 65.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.8391923648542257,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5022354628368618,
+        "status": "ok",
+        "params": {
+            "n_components": 25.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.844435613585929,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5028452189344228,
+        "status": "ok",
+        "params": {
+            "n_components": 60.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.7676781249375421,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5014238991374685,
+        "status": "ok",
+        "params": {
+            "n_components": 40.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.925509221285935,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5007117948083034,
+        "status": "ok",
+        "params": {
+            "n_components": 65.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.608301471337048,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5042679831620651,
+        "status": "ok",
+        "params": {
+            "n_components": 55.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.7387668015680546,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5039626924188024,
+        "status": "ok",
+        "params": {
+            "n_components": 50.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.8437630157868541,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5034556972473279,
+        "status": "ok",
+        "params": {
+            "n_components": 30.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.9927104356185122,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5035581486525526,
+        "status": "ok",
+        "params": {
+            "n_components": 45.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.6496494235730471,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5007117948083034,
+        "status": "ok",
+        "params": {
+            "n_components": 65.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.8780533590313615,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5038614790970245,
+        "status": "ok",
+        "params": {
+            "n_components": 75.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.7960524495266178,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5051817919194421,
+        "status": "ok",
+        "params": {
+            "n_components": 95.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.43229206529110803,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5050804754240436,
+        "status": "ok",
+        "params": {
+            "n_components": 85.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.9361388593286197,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5042679831620651,
+        "status": "ok",
+        "params": {
+            "n_components": 55.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.57242055940449,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5020331393669266,
+        "status": "ok",
+        "params": {
+            "n_components": 40.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.6950555779387315,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5018294746399241,
+        "status": "ok",
+        "params": {
+            "n_components": 65.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.45493853062778167,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5039628987660435,
+        "status": "ok",
+        "params": {
+            "n_components": 75.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.83221072891616,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5056903346952251,
+        "status": "ok",
+        "params": {
+            "n_components": 80.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.3097869011981919,
+            "solver": 1
+        }
+    },
+    {
+        "loss": 0.5030484709669432,
+        "status": "ok",
+        "params": {
+            "n_components": 60.0,
+            "shrinkage": 2,
+            "shrinkage_val": 0.7473646894180094,
+            "solver": 1
+        }
+    }
+]

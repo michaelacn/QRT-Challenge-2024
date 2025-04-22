@@ -1,0 +1,1202 @@
+[
+    {
+        "loss": 0.615220764787654,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 60.0,
+            "n_components": 14.0,
+            "n_neighbors": 2.0,
+            "p": 1.1192899662502034,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5624873935420245,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 110.0,
+            "n_components": 10.0,
+            "n_neighbors": 10.0,
+            "p": 1.9835395243520546,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.535053634748478,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 70.0,
+            "n_components": 6.0,
+            "n_neighbors": 26.0,
+            "p": 1.0753761687665666,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5262136890646565,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 110.0,
+            "n_components": 4.0,
+            "n_neighbors": 32.0,
+            "p": 1.5801684732873698,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5396256594385511,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 100.0,
+            "n_components": 4.0,
+            "n_neighbors": 18.0,
+            "p": 1.3572145604418968,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5291601311319423,
+        "status": "ok",
+        "params": {
+            "algorithm": 1,
+            "leaf_size": 120.0,
+            "n_components": 16.0,
+            "n_neighbors": 58.0,
+            "p": 1.813779376945586,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5279409906259989,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 150.0,
+            "n_components": 8.0,
+            "n_neighbors": 56.0,
+            "p": 1.611343179687145,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5177799377048937,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 50.0,
+            "n_components": 6.0,
+            "n_neighbors": 90.0,
+            "p": 1.6158905287939291,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5527334951420224,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 30.0,
+            "n_components": 14.0,
+            "n_neighbors": 16.0,
+            "p": 1.2305058240993823,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5223519314208687,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 90.0,
+            "n_components": 6.0,
+            "n_neighbors": 70.0,
+            "p": 1.146442404998024,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.533631335132309,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 160.0,
+            "n_components": 8.0,
+            "n_neighbors": 32.0,
+            "p": 1.9827601745407626,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5247912345779964,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 190.0,
+            "n_components": 6.0,
+            "n_neighbors": 44.0,
+            "p": 1.6662421377845127,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5217434142872364,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 40.0,
+            "n_components": 8.0,
+            "n_neighbors": 72.0,
+            "p": 1.3253350034706108,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5216417572968781,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 110.0,
+            "n_components": 12.0,
+            "n_neighbors": 96.0,
+            "p": 1.439460108320974,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5435876802382775,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 70.0,
+            "n_components": 2.0,
+            "n_neighbors": 16.0,
+            "p": 1.8522192318398218,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5184915056633042,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 80.0,
+            "n_components": 4.0,
+            "n_neighbors": 52.0,
+            "p": 1.3050031716045112,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5304824153849585,
+        "status": "ok",
+        "params": {
+            "algorithm": 1,
+            "leaf_size": 180.0,
+            "n_components": 12.0,
+            "n_neighbors": 42.0,
+            "p": 1.9352698744805474,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5277383890495413,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 50.0,
+            "n_components": 18.0,
+            "n_neighbors": 78.0,
+            "p": 1.095533990441853,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.526010963591806,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 40.0,
+            "n_components": 14.0,
+            "n_neighbors": 84.0,
+            "p": 1.3221383201868961,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5273317920622058,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 90.0,
+            "n_components": 14.0,
+            "n_neighbors": 78.0,
+            "p": 1.597027063701986,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5356631120791548,
+        "status": "ok",
+        "params": {
+            "algorithm": 1,
+            "leaf_size": 10.0,
+            "n_components": 2.0,
+            "n_neighbors": 96.0,
+            "p": 1.4736223630076528,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5178820283326271,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 20.0,
+            "n_components": 4.0,
+            "n_neighbors": 62.0,
+            "p": 1.719944060902436,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5367808433875256,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 10.0,
+            "n_components": 2.0,
+            "n_neighbors": 88.0,
+            "p": 1.751477272328114,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5210324658107903,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 20.0,
+            "n_components": 10.0,
+            "n_neighbors": 62.0,
+            "p": 1.7268436289307179,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5167642660501581,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 20.0,
+            "n_components": 4.0,
+            "n_neighbors": 66.0,
+            "p": 1.514771226283186,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5183896628283564,
+        "status": "ok",
+        "params": {
+            "algorithm": 1,
+            "leaf_size": 50.0,
+            "n_components": 6.0,
+            "n_neighbors": 90.0,
+            "p": 1.5259314487687852,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5168655823254362,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 130.0,
+            "n_components": 8.0,
+            "n_neighbors": 100.0,
+            "p": 1.402167850142658,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5197107081174439,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 140.0,
+            "n_components": 8.0,
+            "n_neighbors": 70.0,
+            "p": 1.2245555861920983,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5180859927694066,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 130.0,
+            "n_components": 10.0,
+            "n_neighbors": 98.0,
+            "p": 1.4010586580384772,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5409470764168172,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 170.0,
+            "n_components": 20.0,
+            "n_neighbors": 44.0,
+            "p": 1.5074480934629695,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5228613314401964,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 200.0,
+            "n_components": 12.0,
+            "n_neighbors": 78.0,
+            "p": 1.2305452855693915,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5938828943684133,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 140.0,
+            "n_components": 10.0,
+            "n_neighbors": 4.0,
+            "p": 1.4394167124977892,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5169674561344821,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 130.0,
+            "n_components": 4.0,
+            "n_neighbors": 64.0,
+            "p": 1.5641595738598668,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5572036150489514,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 160.0,
+            "n_components": 2.0,
+            "n_neighbors": 30.0,
+            "p": 1.0407435398269702,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5326151059438056,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 100.0,
+            "n_components": 8.0,
+            "n_neighbors": 38.0,
+            "p": 1.3957252960807702,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5195072702403343,
+        "status": "ok",
+        "params": {
+            "algorithm": 1,
+            "leaf_size": 120.0,
+            "n_components": 4.0,
+            "n_neighbors": 50.0,
+            "p": 1.6784011730606023,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5270268210911306,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 60.0,
+            "n_components": 16.0,
+            "n_neighbors": 82.0,
+            "p": 1.1835949415061726,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.525908934912269,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 70.0,
+            "n_components": 6.0,
+            "n_neighbors": 50.0,
+            "p": 1.8489723120061377,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5228605570877409,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 150.0,
+            "n_components": 8.0,
+            "n_neighbors": 66.0,
+            "p": 1.2767875403636708,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5416588302198171,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 120.0,
+            "n_components": 10.0,
+            "n_neighbors": 24.0,
+            "p": 1.54575691872897,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5196092679457729,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 90.0,
+            "n_components": 6.0,
+            "n_neighbors": 100.0,
+            "p": 1.0076887942888832,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5542567083701926,
+        "status": "ok",
+        "params": {
+            "algorithm": 1,
+            "leaf_size": 110.0,
+            "n_components": 4.0,
+            "n_neighbors": 8.0,
+            "p": 1.385082992963857,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5206259617457498,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 180.0,
+            "n_components": 12.0,
+            "n_neighbors": 74.0,
+            "p": 1.647161217291646,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5224535264630306,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 130.0,
+            "n_components": 6.0,
+            "n_neighbors": 56.0,
+            "p": 1.1561586864518687,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5201171192601899,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 100.0,
+            "n_components": 8.0,
+            "n_neighbors": 92.0,
+            "p": 1.4551703949163426,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5280427715127503,
+        "status": "ok",
+        "params": {
+            "algorithm": 1,
+            "leaf_size": 80.0,
+            "n_components": 2.0,
+            "n_neighbors": 36.0,
+            "p": 1.7784199685372368,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5418613698480783,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 150.0,
+            "n_components": 10.0,
+            "n_neighbors": 22.0,
+            "p": 1.3620565803178184,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5277376146970856,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 200.0,
+            "n_components": 16.0,
+            "n_neighbors": 84.0,
+            "p": 1.6256850940286172,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.519202423165652,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 80.0,
+            "n_components": 4.0,
+            "n_neighbors": 94.0,
+            "p": 1.486977604481842,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5232671850491746,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 60.0,
+            "n_components": 8.0,
+            "n_neighbors": 68.0,
+            "p": 1.275669293962824,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5445032126334675,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 170.0,
+            "n_components": 2.0,
+            "n_neighbors": 58.0,
+            "p": 1.9309392188819878,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5184913198187149,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 30.0,
+            "n_components": 6.0,
+            "n_neighbors": 86.0,
+            "p": 1.5804921680402744,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5246900112250132,
+        "status": "ok",
+        "params": {
+            "algorithm": 1,
+            "leaf_size": 110.0,
+            "n_components": 14.0,
+            "n_neighbors": 74.0,
+            "p": 1.096963173590916,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5275358803953782,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 160.0,
+            "n_components": 12.0,
+            "n_neighbors": 52.0,
+            "p": 1.3463284524678925,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5233681915834703,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 90.0,
+            "n_components": 6.0,
+            "n_neighbors": 44.0,
+            "p": 1.4318054354223684,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5147321793623301,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 140.0,
+            "n_components": 4.0,
+            "n_neighbors": 100.0,
+            "p": 1.7016810026588942,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.514122423264769,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 140.0,
+            "n_components": 4.0,
+            "n_neighbors": 80.0,
+            "p": 1.9935148862580414,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5393213389235385,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 190.0,
+            "n_components": 2.0,
+            "n_neighbors": 78.0,
+            "p": 1.9956320407746546,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5291602550283352,
+        "status": "ok",
+        "params": {
+            "algorithm": 1,
+            "leaf_size": 140.0,
+            "n_components": 18.0,
+            "n_neighbors": 82.0,
+            "p": 1.9551185288516346,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5162561979170539,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 120.0,
+            "n_components": 4.0,
+            "n_neighbors": 90.0,
+            "p": 1.890832773670823,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5361710563158664,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 170.0,
+            "n_components": 2.0,
+            "n_neighbors": 94.0,
+            "p": 1.8116665148317166,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5182879129157034,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 190.0,
+            "n_components": 6.0,
+            "n_neighbors": 100.0,
+            "p": 1.8832891771359745,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5325130153160722,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 150.0,
+            "n_components": 20.0,
+            "n_neighbors": 96.0,
+            "p": 1.7847454770565003,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5154434685538565,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 180.0,
+            "n_components": 4.0,
+            "n_neighbors": 88.0,
+            "p": 1.7101240509274191,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5426741611594721,
+        "status": "ok",
+        "params": {
+            "algorithm": 3,
+            "leaf_size": 160.0,
+            "n_components": 2.0,
+            "n_neighbors": 72.0,
+            "p": 1.687029134108635,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5151386214791742,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 180.0,
+            "n_components": 4.0,
+            "n_neighbors": 86.0,
+            "p": 1.7127664657584774,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5131066586877389,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 140.0,
+            "n_components": 4.0,
+            "n_neighbors": 76.0,
+            "p": 1.7517025520828893,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5422676261203332,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 140.0,
+            "n_components": 2.0,
+            "n_neighbors": 60.0,
+            "p": 1.8447777632819868,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5140208901708037,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 120.0,
+            "n_components": 4.0,
+            "n_neighbors": 80.0,
+            "p": 1.751230994129324,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5192023921915536,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 120.0,
+            "n_components": 6.0,
+            "n_neighbors": 80.0,
+            "p": 1.9701372529119656,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5132082227558026,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 150.0,
+            "n_components": 4.0,
+            "n_neighbors": 76.0,
+            "p": 1.7529028364786952,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5226571811588279,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 130.0,
+            "n_components": 8.0,
+            "n_neighbors": 74.0,
+            "p": 1.7597435079025237,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5416580868414598,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 100.0,
+            "n_components": 2.0,
+            "n_neighbors": 70.0,
+            "p": 1.9012312406497542,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5213362287920349,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 150.0,
+            "n_components": 6.0,
+            "n_neighbors": 62.0,
+            "p": 1.8164320300901373,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5268242504887712,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 170.0,
+            "n_components": 10.0,
+            "n_neighbors": 48.0,
+            "p": 1.6610022554765143,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5158495080074239,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 160.0,
+            "n_components": 4.0,
+            "n_neighbors": 56.0,
+            "p": 1.742064810956448,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5222508009901801,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 110.0,
+            "n_components": 6.0,
+            "n_neighbors": 68.0,
+            "p": 1.5374047737208973,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5236733174250365,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 90.0,
+            "n_components": 8.0,
+            "n_neighbors": 76.0,
+            "p": 1.6244568974637186,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5406418886270545,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 130.0,
+            "n_components": 2.0,
+            "n_neighbors": 64.0,
+            "p": 1.5929134349236962,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5327165770895745,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 120.0,
+            "n_components": 18.0,
+            "n_neighbors": 54.0,
+            "p": 1.8103998772501373,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5178817495657431,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 100.0,
+            "n_components": 4.0,
+            "n_neighbors": 84.0,
+            "p": 1.5589861411764236,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5185929768090731,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 190.0,
+            "n_components": 8.0,
+            "n_neighbors": 92.0,
+            "p": 1.8623873063210914,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5251976147466444,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 130.0,
+            "n_components": 6.0,
+            "n_neighbors": 40.0,
+            "p": 1.6388239976870547,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5423691901883969,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 80.0,
+            "n_components": 2.0,
+            "n_neighbors": 66.0,
+            "p": 1.9196827706424684,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5203209598005765,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 70.0,
+            "n_components": 12.0,
+            "n_neighbors": 76.0,
+            "p": 1.7781897652137568,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.526416972071275,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 120.0,
+            "n_components": 14.0,
+            "n_neighbors": 60.0,
+            "p": 1.6069780665496067,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5475506302609505,
+        "status": "ok",
+        "params": {
+            "algorithm": 1,
+            "leaf_size": 150.0,
+            "n_components": 2.0,
+            "n_neighbors": 48.0,
+            "p": 1.7403364253246554,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5226579864853815,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 200.0,
+            "n_components": 10.0,
+            "n_neighbors": 70.0,
+            "p": 1.9526639954816931,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5266194187772417,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 110.0,
+            "n_components": 4.0,
+            "n_neighbors": 32.0,
+            "p": 1.6743566841341915,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5193042040524032,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 170.0,
+            "n_components": 6.0,
+            "n_neighbors": 82.0,
+            "p": 1.8673832357711686,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5213361978179367,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 160.0,
+            "n_components": 8.0,
+            "n_neighbors": 88.0,
+            "p": 1.5139789520796147,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5214377309119023,
+        "status": "ok",
+        "params": {
+            "algorithm": 1,
+            "leaf_size": 150.0,
+            "n_components": 6.0,
+            "n_neighbors": 72.0,
+            "p": 1.7958053689843545,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5280432670983217,
+        "status": "ok",
+        "params": {
+            "algorithm": 0,
+            "leaf_size": 130.0,
+            "n_components": 16.0,
+            "n_neighbors": 64.0,
+            "p": 1.4826740808721781,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5127001855967965,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 140.0,
+            "n_components": 4.0,
+            "n_neighbors": 80.0,
+            "p": 1.8386988365354668,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5169677658754643,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 190.0,
+            "n_components": 2.0,
+            "n_neighbors": 98.0,
+            "p": 1.8294457702239557,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5206250634969014,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 140.0,
+            "n_components": 8.0,
+            "n_neighbors": 86.0,
+            "p": 1.9311678561213748,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5196098254795409,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 180.0,
+            "n_components": 10.0,
+            "n_neighbors": 76.0,
+            "p": 1.6935929753202577,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5372888495724335,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 170.0,
+            "n_components": 2.0,
+            "n_neighbors": 92.0,
+            "p": 1.9062222569820257,
+            "weights": 1
+        }
+    },
+    {
+        "loss": 0.5194054893535829,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 160.0,
+            "n_components": 4.0,
+            "n_neighbors": 58.0,
+            "p": 1.6513419676901993,
+            "weights": 0
+        }
+    },
+    {
+        "loss": 0.5245877657267886,
+        "status": "ok",
+        "params": {
+            "algorithm": 2,
+            "leaf_size": 150.0,
+            "n_components": 6.0,
+            "n_neighbors": 54.0,
+            "p": 1.9772334105864477,
+            "weights": 1
+        }
+    }
+]
