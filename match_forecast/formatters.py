@@ -59,6 +59,10 @@ def format_sgdc(params):
     params = format_common_int(params, ['n_components'])
     return params
 
+def format_qda(params):
+    params = format_common_int(params, ['n_components'])
+    return params
+
 def format_gnb(params, y_train=None):
     params = format_common_int(params, ['n_components'])
     learn_priors = bool(params.get('learn_priors', False))
@@ -98,5 +102,6 @@ FORMATTERS = {
     'logreg': format_logreg,
     'knn': format_knn,
     'catboost': format_catboost,
-    'sgdc': format_sgdc
+    'sgdc': format_sgdc,
+    'qda': format_qda
 }
