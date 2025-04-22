@@ -1,0 +1,4 @@
+learn_priors: 0
+n_components: 8
+priors: null
+var_smoothing: 2.4661164392609536e-12

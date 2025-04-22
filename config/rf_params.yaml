@@ -1,0 +1,10 @@
+bootstrap: false
+class_weight: null
+criterion: entropy
+max_depth: 3
+max_features: 0.5059860161196842
+max_leaf_nodes: 10
+min_impurity_decrease: 0.004748152188620212
+min_samples_leaf: 12
+min_samples_split: 2
+n_estimators: 200

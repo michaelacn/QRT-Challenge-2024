@@ -1,0 +1,9 @@
+class_weight: null
+criterion: gini
+max_depth: 21
+max_features: 0.48300466724197205
+max_leaf_nodes: 580
+min_impurity_decrease: 0.0003126137488028501
+min_samples_leaf: 17
+min_samples_split: 16
+n_estimators: 750

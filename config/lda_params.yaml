@@ -1,0 +1,4 @@
+n_components: 65
+shrinkage: 1
+shrinkage_val: null
+solver: eigen

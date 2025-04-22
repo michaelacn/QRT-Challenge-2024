@@ -1,0 +1,6 @@
+algorithm: auto
+leaf_size: 160
+n_components: 4
+n_neighbors: 100
+p: 1.9777641287939454
+weights: uniform

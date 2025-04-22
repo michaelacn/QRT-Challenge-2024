@@ -1,0 +1,10 @@
+auto_class_weights: null
+bagging_temperature: 0.7869654255816461
+border_count: 128
+depth: 3
+grow_policy: SymmetricTree
+iterations: 1750
+l2_leaf_reg: 9.29983250494077
+learning_rate: 0.015657706431599187
+random_strength: 2.571043443663362
+rsm: 0.6929088964409026
