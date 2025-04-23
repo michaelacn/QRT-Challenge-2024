@@ -1,0 +1,9 @@
+clip_value: 2.039306564397546
+gamma: 1.0373107804827173
+lambda_sparse: 0.0007629251680237833
+learning_rate: 0.020892188021323258
+n_a: 16
+n_d: 40
+n_independent: 5
+n_shared: 2
+n_steps: 5

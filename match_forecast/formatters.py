@@ -92,6 +92,12 @@ def format_lda(params):
         params['shrinkage'] = float(params['shrinkage_val'])
     return params
 
+def format_tabnet(params):
+    return format_common_int(
+        params,
+        ['n_d', 'n_a', 'n_steps', 'n_shared', 'n_independent']
+    )
+
 FORMATTERS = {
     'rf': format_rf,
     'xt': format_xt,
