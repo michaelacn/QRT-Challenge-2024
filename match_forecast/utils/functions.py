@@ -1,22 +1,24 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-Simplified Data Preprocessing, Visualization, and Modeling Module
 
-This module includes simplified functions to:
-    - Replace string representations like "None" and "Null" with np.nan.
-    - Visualize missing values.
-    - Identify columns with high percentages of missing data.
-    - Replace outlier values using Z-score or IQR methods.
-    - Impute missing values using different strategies.
-    - Create quick univariate and bivariate plots.
-    - Plot time series data (with optional missing value handling).
-    - Perform cross-validation and evaluate model performance.
+"""
+Utility module for data preprocessing, exploratory analysis, and model evaluation.
+
+Features include:
+    - Replacement of string/infinite values with NaN and general null handling.
+    - Aggregation and cleaning utilities for team and player statistics.
+    - Visualization helpers: missing-value heatmaps, NaN percentage reports.
+    - Outlier detection and replacement via Z-score or IQR methods.
+    - Imputation strategies for numeric (median) and categorical (mode) data.
+    - Quick plotting functions: univariate, bivariate, time series, and frequency charts.
+    - Model evaluation tools: cross-validation, performance metrics, and confusion matrices.
+    - SHAP-based feature importance and selection.
 """
 
 import numpy as np
 import pandas as pd
-from typing import List, Literal
+from typing import List, Literal, Dict, Optional
+from tqdm import tqdm
 
 # Machine Learning Imports
 from sklearn.model_selection import KFold, StratifiedKFold, cross_val_score
@@ -40,7 +42,7 @@ from scipy.stats import pearsonr, spearmanr
 
 
 # =============================================================================
-# Data Preprocessing and Utility Functions
+# Data Cleaning & Aggregation Utilities
 # =============================================================================
 
 
@@ -49,6 +51,78 @@ def replace_null_values(series: pd.Series) -> pd.Series:
     Replace 'None', 'Null', np.inf, and -np.inf with np.nan in a Series.
     """
     return series.replace(["None", "Null", np.inf, -np.inf], np.nan)
+
+
+def clean_and_impute(
+    df: pd.DataFrame, 
+    home: bool, 
+    meta_cols: Optional[List[str]] = None, 
+    threshold: float = 0.5
+) -> pd.DataFrame:
+    """
+    Drop metadata, replace nulls, drop sparse cols, then median/categorical-impute
+    """
+    df = df.drop(columns=meta_cols, errors='ignore').apply(replace_null_values)
+
+    num_cols = df.select_dtypes(include=[np.number]).columns.difference(['ID'])
+    sparse = [c for c in num_cols if df[c].isna().sum() > threshold * len(df)]
+    df = df.drop(columns=sparse)
+    keep_nums = num_cols.difference(sparse)
+    if len(keep_nums):
+        df[keep_nums] = df[keep_nums].fillna(df[keep_nums].median())
+
+    cat_cols = df.select_dtypes(include=["object", "category"]).columns
+    mode = df[cat_cols].mode()
+    if not mode.empty:
+        df[cat_cols] = df[cat_cols].fillna(mode.iloc[0])
+
+    prefix = "HOME_" if home else "AWAY_"
+    df = df.rename(columns=lambda c: f"{prefix}{c}" if c != "ID" else c)
+        
+    return df
+
+
+def agg_positions(
+    df: pd.DataFrame,
+    mapping: Dict[str, str],
+    id_col: str = "ID", 
+    pos_col: str = "POSITION"
+) -> pd.DataFrame:
+    """
+    Aggregate numeric features by position group in a single pass.
+    """
+    df = df.copy()
+    df['POSITION_MAP'] = df[pos_col].map(mapping)
+    numeric_cols = df.select_dtypes(include=[np.number]).columns.difference([id_col])
+    # Compute mean per (id_col, POSITION_MAP)
+    grouped = df.groupby([id_col, 'POSITION_MAP'])[numeric_cols].mean()
+    # Pivot to wide format: POSITION_MAP becomes column level
+    pivot = grouped.unstack('POSITION_MAP')
+    # Flatten MultiIndex columns into single level
+    pivot.columns = [f"{feat}_{grp}" for feat, grp in pivot.columns]
+    # Reset index to restore `id_col` as a column
+    result = pivot.reset_index()
+    return result
+
+def merge_and_select_average(
+    home_df: pd.DataFrame,
+    away_df: pd.DataFrame,
+    id_col: str = "ID",
+    suffix: str = "_average",
+    how: str = "inner"
+) -> pd.DataFrame:
+    """
+    Merge home/away DataFrames on `id_col`, set that as index,
+    and keep only columns ending with `suffix`.
+    """
+    merged = home_df.merge(away_df, on=id_col, how=how)
+    merged = merged.set_index(id_col)
+    return merged.loc[:, merged.columns.str.endswith(suffix)]
+
+
+# =============================================================================
+# EDA & Outlier Utilities
+# =============================================================================
 
 
 def plot_nan_heatmap(df: pd.DataFrame, title: str) -> None:
@@ -103,6 +177,23 @@ def replace_outliers_iqr(series: pd.Series) -> pd.Series:
     series_clean[(series < lower) | (series > upper)] = median_val
     return series_clean
 
+# =============================================================================
+# Features Engineering
+# =============================================================================
+
+def make_diff_features(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Compute all DIFF_ features by pairing HOME_ and AWAY_ columns.
+    """
+    home_cols = [c for c in df.columns if c.startswith("HOME_")]
+    pairs = [(h, h.replace("HOME_", "AWAY_", 1)) for h in home_cols]
+    pairs = [(h, a) for h, a in pairs if a in df.columns]
+    for h, a in tqdm(pairs, desc="Diff features"):
+        diff_name = h.replace("HOME_", "DIFF_", 1)
+        df[diff_name] = df[h] - df[a]
+    to_drop = [col for h, a in pairs for col in (h, a)]
+    df.drop(columns=to_drop, inplace=True)
+    return df
 
 # =============================================================================
 # Visualization Functions
