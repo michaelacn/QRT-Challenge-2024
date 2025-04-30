@@ -63,7 +63,7 @@ def main(
     home_teams = clean_and_impute(df_home, home=True, meta_cols=meta_cols_teams)
     away_teams = clean_and_impute(df_away, home=False, meta_cols=meta_cols_teams)
 
-    train_data_teams = merge_and_select_average(home_teams, away_teams)
+    train_data_teams = merge_and_select_metric(home_teams, away_teams, metric=NUMERIC_METRIC)
     train_data_teams.to_csv(train_team_output, index=True)
     logger.success(f"Train team data saved to {train_team_output}")
 
@@ -78,7 +78,7 @@ def main(
     away_players = clean_and_impute(df_away_p, home=False, meta_cols=META_COLS_PLAYERS)
     away_agg = agg_positions(away_players, mapping=POSITION_MAP)
 
-    train_data_players = merge_and_select_average(home_agg, away_agg)
+    train_data_players = merge_and_select_metric(home_agg, away_agg, metric=NUMERIC_METRIC)
     train_data_players.to_csv(train_player_output, index=True)
     logger.success(f"Train player data saved to {train_player_output}")
 
@@ -96,7 +96,7 @@ def main(
     home_teams_t = clean_and_impute(df_home_t, home=True, meta_cols=None)
     away_teams_t = clean_and_impute(df_away_t, home=False, meta_cols=None)
 
-    test_data_teams = merge_and_select_average(home_teams_t, away_teams_t)
+    test_data_teams = merge_and_select_metric(home_teams_t, away_teams_t, metric=NUMERIC_METRIC)
     test_data_teams.to_csv(test_team_output, index=True)
     logger.success(f"Test team data saved to {test_team_output}")
 
@@ -111,7 +111,7 @@ def main(
     away_players_t = clean_and_impute(df_away_p_t, home=False, meta_cols=None)
     away_agg_t = agg_positions(away_players_t, mapping=POSITION_MAP)
 
-    test_data_players = merge_and_select_average(home_agg_t, away_agg_t)
+    test_data_players = merge_and_select_metric(home_agg_t, away_agg_t, metric=NUMERIC_METRIC)
     test_data_players.to_csv(test_player_output, index=True)
     logger.success(f"Test player data saved to {test_player_output}")
 

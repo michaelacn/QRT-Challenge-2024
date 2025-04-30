@@ -104,11 +104,11 @@ def agg_positions(
     result = pivot.reset_index()
     return result
 
-def merge_and_select_average(
+def merge_and_select_metric(
     home_df: pd.DataFrame,
     away_df: pd.DataFrame,
+    metric: str = "_average",
     id_col: str = "ID",
-    suffix: str = "_average",
     how: str = "inner"
 ) -> pd.DataFrame:
     """
@@ -117,7 +117,7 @@ def merge_and_select_average(
     """
     merged = home_df.merge(away_df, on=id_col, how=how)
     merged = merged.set_index(id_col)
-    return merged.loc[:, merged.columns.str.endswith(suffix)]
+    return merged.loc[:, merged.columns.str.endswith(metric)]
 
 
 # =============================================================================
