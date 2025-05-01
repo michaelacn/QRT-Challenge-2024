@@ -188,28 +188,40 @@ def replace_outliers_iqr(series: pd.Series) -> pd.Series:
 def make_diff_features(df: pd.DataFrame) -> pd.DataFrame:
     """
     Compute all DIFF_ features by pairing HOME_ and AWAY_ columns.
+    Builds all diff columns in a single concat to avoid DataFrame fragmentation.
     """
     home_cols = [c for c in df.columns if c.startswith("HOME_")]
-    pairs = [(h, h.replace("HOME_", "AWAY_", 1)) for h in home_cols]
-    pairs = [(h, a) for h, a in pairs if a in df.columns]
-    for h, a in tqdm(pairs, desc="Diff features"):
-        diff_name = h.replace("HOME_", "DIFF_", 1)
-        df[diff_name] = df[h] - df[a]
+    pairs = [
+        (h, h.replace("HOME_", "AWAY_", 1))
+        for h in home_cols
+        if h.replace("HOME_", "AWAY_", 1) in df.columns
+    ]
+
+    diff_data = {
+        h.replace("HOME_", "DIFF_", 1): df[h] - df[a]
+        for h, a in pairs
+    }
+
+    df = pd.concat([df, pd.DataFrame(diff_data, index=df.index)], axis=1)
     to_drop = [col for h, a in pairs for col in (h, a)]
-    df.drop(columns=to_drop, inplace=True)
-    return df
+    return df.drop(columns=to_drop)
 
 
-def keep_top_shap_features(X, y, model, shap_folds=3, n_keep=350):
+def keep_top_shap_features(
+    X: pd.DataFrame,
+    y: pd.Series,
+    model,
+    shap_folds: int = 3,
+    n_keep: int = 275,
+) -> tuple[list[str], set[str]]:
     """
-    Computes OOF mean-absolute SHAP importances for each feature and
-    retains only the top `n_keep` features by importance.
+    Compute OOF SHAP importances and keep the top `n_keep` features.
     """
     skf = StratifiedKFold(n_splits=shap_folds, shuffle=True, random_state=42)
     shap_accum = np.zeros(X.shape[1], dtype=float)
     cols = X.columns
 
-    # 1) OOF SHAP accumulation
+    # 1) CV OOF
     for train_idx, valid_idx in skf.split(X, y):
         X_tr, X_val = X.iloc[train_idx], X.iloc[valid_idx]
         y_tr = y.iloc[train_idx]
@@ -218,22 +230,31 @@ def keep_top_shap_features(X, y, model, shap_folds=3, n_keep=350):
         explainer = shap.TreeExplainer(model)
         shap_vals = explainer.shap_values(X_val)
 
-        # multiclass vs binary/reg
+        # Normalize shap_vals to get 2D arrays
         if isinstance(shap_vals, list):
-            abs_means = np.mean([np.mean(np.abs(s), axis=0) for s in shap_vals], axis=0)
-        else:
-            abs_means = np.mean(np.abs(shap_vals), axis=0)
+            arrs = shap_vals
+        elif isinstance(shap_vals, np.ndarray) and shap_vals.ndim == 3:
+            # (n_samples, n_features, n_classes)
+            arrs = [shap_vals[:, :, k] for k in range(shap_vals.shape[2])]
+        elif isinstance(shap_vals, np.ndarray) and shap_vals.ndim == 2:
+            arrs = [shap_vals]
+
+        # abs mean for each classes then mean upon these classes
+        abs_means = np.mean(
+            [np.mean(np.abs(arr), axis=0) for arr in arrs],
+            axis=0
+        )
 
         shap_accum += abs_means
 
     shap_avg = shap_accum / shap_folds
     shap_imp = pd.Series(shap_avg, index=cols).sort_values(ascending=False)
 
-    # 2) Keep top `n_keep` features
     retained = shap_imp.index[:n_keep].tolist()
     dropped = set(cols) - set(retained)
 
     return retained, dropped
+
 
 
 # =============================================================================
