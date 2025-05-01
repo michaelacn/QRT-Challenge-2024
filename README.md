@@ -9,53 +9,40 @@ Challenge match forecast
 ## Project Organization
 
 ```
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
+├── LICENSE
+├── Makefile                  <- Utility commands (e.g., `make data`, `make train`)
+├── README.md                 <- Project overview and usage instructions
 ├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
+│   ├── external              <- Third-party/raw source data                
+│   ├── interim               <- Transformed intermediate datasets
+│   ├── processed             <- Final cleaned datasets for modeling
+│   └── raw                   <- Original datasets
 │
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
-│
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         match_forecast and configuration for tools like black
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── setup.cfg          <- Configuration file for flake8
-│
-└── match_forecast   <- Source code for use in this project.
+├── docs                      <- Static site documentation (e.g., MkDocs)
+├── models                    <- Trained model artifacts and summaries
+├── notebooks                 <- Jupyter notebooks for exploration and analysis
+├── pyproject.toml            <- Package metadata and tool configuration (e.g., flake8)
+├── requirements.txt          <- Pin-file for Python dependencies
+└── match_forecast
+    ├── __init__.py
+    ├── config.py             <- Global constants and path definitions
     │
-    ├── __init__.py             <- Makes match_forecast a Python module
+    ├── processing
+    │   ├── __init__.py
+    │   ├── dataset.py        <- CLI to generate and clean intermediate datasets
+    │   └── features.py       <- CLI and utilities for feature engineering
     │
-    ├── config.py               <- Store useful variables and configuration
+    ├── modeling
+    │   ├── __init__.py
+    │   ├── formatters.py     <- Hyperparameter formatting per algorithm
+    │   ├── predict.py        <- Inference script using saved models
+    │   └── train.py          <- CLI to train models (with optional scaling/PCA)
     │
-    ├── dataset.py              <- Scripts to download or generate data
-    │
-    ├── features.py             <- Code to create features for modeling
-    │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
-    │
-    └── plots.py                <- Code to create visualizations
+    └── utils
+        ├── __init__.py
+        ├── functions.py      <- Data cleaning, outlier handling, SHAP selection, etc.
+        └── plots.py          <- Reusable plotting functions
+
 ```
 
 --------
-
