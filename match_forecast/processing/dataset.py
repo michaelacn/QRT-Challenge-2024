@@ -73,10 +73,10 @@ def main(
     df_away_p = pd.read_csv(RAW_DATA_DIR / "train_away_player_statistics_df.csv", index_col=0)
 
     home_players = clean_and_impute(df_home_p, home=True, meta_cols=META_COLS_PLAYERS)
-    home_agg = agg_positions(home_players, mapping=POSITION_MAP)
+    home_agg = agg_positions(home_players, mapping=POSITION_MAP, home=True)
 
     away_players = clean_and_impute(df_away_p, home=False, meta_cols=META_COLS_PLAYERS)
-    away_agg = agg_positions(away_players, mapping=POSITION_MAP)
+    away_agg = agg_positions(away_players, mapping=POSITION_MAP, home=False)
 
     train_data_players = merge_and_select_metric(home_agg, away_agg, metric=NUMERIC_METRIC)
     train_data_players.to_csv(train_player_output, index=True)
@@ -106,10 +106,10 @@ def main(
     df_away_p_t = pd.read_csv(RAW_DATA_DIR / "test_away_player_statistics_df.csv", index_col=0)
 
     home_players_t = clean_and_impute(df_home_p_t, home=True, meta_cols=None)
-    home_agg_t = agg_positions(home_players_t, mapping=POSITION_MAP)
+    home_agg_t = agg_positions(home_players_t, mapping=POSITION_MAP, home=True)
 
     away_players_t = clean_and_impute(df_away_p_t, home=False, meta_cols=None)
-    away_agg_t = agg_positions(away_players_t, mapping=POSITION_MAP)
+    away_agg_t = agg_positions(away_players_t, mapping=POSITION_MAP, home=False)
 
     test_data_players = merge_and_select_metric(home_agg_t, away_agg_t, metric=NUMERIC_METRIC)
     test_data_players.to_csv(test_player_output, index=True)

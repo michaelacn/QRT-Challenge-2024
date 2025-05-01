@@ -62,7 +62,9 @@ def clean_and_impute(
     """
     Drop metadata, replace nulls, drop sparse cols, then median/categorical-impute
     """
-    df = df.drop(columns=meta_cols, errors='ignore').apply(replace_null_values)
+    if meta_cols:
+        df = df.drop(columns=meta_cols, errors='ignore')
+    df = df.apply(replace_null_values)
 
     num_cols = df.select_dtypes(include=[np.number]).columns.difference(['ID'])
     sparse = [c for c in num_cols if df[c].isna().sum() > threshold * len(df)]
@@ -85,19 +87,20 @@ def clean_and_impute(
 def agg_positions(
     df: pd.DataFrame,
     mapping: Dict[str, str],
+    home: bool,
     id_col: str = "ID", 
-    pos_col: str = "POSITION"
 ) -> pd.DataFrame:
     """
     Aggregate numeric features by position group in a single pass.
     """
     df = df.copy()
-    df['POSITION_MAP'] = df[pos_col].map(mapping)
+    pos_col = "HOME_POSITION" if home else "AWAY_POSITION"
+    df["POSITION_MAP"] = df[pos_col].map(mapping)
     numeric_cols = df.select_dtypes(include=[np.number]).columns.difference([id_col])
     # Compute mean per (id_col, POSITION_MAP)
-    grouped = df.groupby([id_col, 'POSITION_MAP'])[numeric_cols].mean()
+    grouped = df.groupby([id_col, "POSITION_MAP"])[numeric_cols].mean()
     # Pivot to wide format: POSITION_MAP becomes column level
-    pivot = grouped.unstack('POSITION_MAP')
+    pivot = grouped.unstack("POSITION_MAP")
     # Flatten MultiIndex columns into single level
     pivot.columns = [f"{feat}_{grp}" for feat, grp in pivot.columns]
     # Reset index to restore `id_col` as a column
@@ -112,12 +115,13 @@ def merge_and_select_metric(
     how: str = "inner"
 ) -> pd.DataFrame:
     """
-    Merge home/away DataFrames on `id_col`, set that as index,
-    and keep only columns ending with `suffix`.
+    Merge home/away DataFrames on `id_col`, set that as the index,
+    and return only the columns whose names end with the given `metric`.
     """
     merged = home_df.merge(away_df, on=id_col, how=how)
-    merged = merged.set_index(id_col)
-    return merged.loc[:, merged.columns.str.endswith(metric)]
+    if id_col in merged.columns:
+        merged = merged.set_index(id_col)
+    return merged.loc[:, merged.columns.str.contains(metric)]
 
 
 # =============================================================================
@@ -178,7 +182,7 @@ def replace_outliers_iqr(series: pd.Series) -> pd.Series:
     return series_clean
 
 # =============================================================================
-# Features Engineering
+# Feature Engineering
 # =============================================================================
 
 def make_diff_features(df: pd.DataFrame) -> pd.DataFrame:
@@ -194,6 +198,43 @@ def make_diff_features(df: pd.DataFrame) -> pd.DataFrame:
     to_drop = [col for h, a in pairs for col in (h, a)]
     df.drop(columns=to_drop, inplace=True)
     return df
+
+
+def keep_top_shap_features(X, y, model, shap_folds=3, n_keep=350):
+    """
+    Computes OOF mean-absolute SHAP importances for each feature and
+    retains only the top `n_keep` features by importance.
+    """
+    skf = StratifiedKFold(n_splits=shap_folds, shuffle=True, random_state=42)
+    shap_accum = np.zeros(X.shape[1], dtype=float)
+    cols = X.columns
+
+    # 1) OOF SHAP accumulation
+    for train_idx, valid_idx in skf.split(X, y):
+        X_tr, X_val = X.iloc[train_idx], X.iloc[valid_idx]
+        y_tr = y.iloc[train_idx]
+
+        model.fit(X_tr, y_tr)
+        explainer = shap.TreeExplainer(model)
+        shap_vals = explainer.shap_values(X_val)
+
+        # multiclass vs binary/reg
+        if isinstance(shap_vals, list):
+            abs_means = np.mean([np.mean(np.abs(s), axis=0) for s in shap_vals], axis=0)
+        else:
+            abs_means = np.mean(np.abs(shap_vals), axis=0)
+
+        shap_accum += abs_means
+
+    shap_avg = shap_accum / shap_folds
+    shap_imp = pd.Series(shap_avg, index=cols).sort_values(ascending=False)
+
+    # 2) Keep top `n_keep` features
+    retained = shap_imp.index[:n_keep].tolist()
+    dropped = set(cols) - set(retained)
+
+    return retained, dropped
+
 
 # =============================================================================
 # Visualization Functions
@@ -387,39 +428,3 @@ def evaluate_model(
     print(f"F1 Score:   {f1:.4f}")
     if model_type == "classifier":
         print(f"Gini:       {gini:.4f}")
-
-
-def keep_top_shap_features(X, y, model, shap_folds=3, n_keep=350):
-    """
-    Computes OOF mean-absolute SHAP importances for each feature and
-    retains only the top `n_keep` features by importance.
-    """
-    skf = StratifiedKFold(n_splits=shap_folds, shuffle=True, random_state=42)
-    shap_accum = np.zeros(X.shape[1], dtype=float)
-    cols = X.columns
-
-    # 1) OOF SHAP accumulation
-    for train_idx, valid_idx in skf.split(X, y):
-        X_tr, X_val = X.iloc[train_idx], X.iloc[valid_idx]
-        y_tr = y.iloc[train_idx]
-
-        model.fit(X_tr, y_tr)
-        explainer = shap.TreeExplainer(model)
-        shap_vals = explainer.shap_values(X_val)
-
-        # multiclass vs binary/reg
-        if isinstance(shap_vals, list):
-            abs_means = np.mean([np.mean(np.abs(s), axis=0) for s in shap_vals], axis=0)
-        else:
-            abs_means = np.mean(np.abs(shap_vals), axis=0)
-
-        shap_accum += abs_means
-
-    shap_avg = shap_accum / shap_folds
-    shap_imp = pd.Series(shap_avg, index=cols).sort_values(ascending=False)
-
-    # 2) Keep top `n_keep` features
-    retained = shap_imp.index[:n_keep].tolist()
-    dropped = set(cols) - set(retained)
-
-    return retained, dropped

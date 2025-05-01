@@ -2,11 +2,13 @@ ipython
 jupyterlab
 loguru
 matplotlib
+seaborn
 mkdocs
 notebook
 statsmodels
 lightgbm
 catboost
+xgboost
 shap
 hyperopt
 numpy
