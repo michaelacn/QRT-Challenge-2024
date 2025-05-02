@@ -1,3 +1,9 @@
+# Virtual environment
+.myenv/
+env/
+venv/
+
+
 # Python
 __pycache__/
 *.py[cod]
