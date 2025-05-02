@@ -11,7 +11,7 @@ Challenge match forecast
 ```
 ├── LICENSE
 ├── Makefile                  <- Utility commands (e.g., `make data`, `make train`)
-├── README.md                 <- Project overview and usage instructions
+├── README.md                 
 ├── data
 │   ├── external              <- Third-party/raw source data                
 │   ├── interim               <- Transformed intermediate datasets
@@ -19,10 +19,10 @@ Challenge match forecast
 │   └── raw                   <- Original datasets
 │
 ├── docs                      <- Static site documentation (e.g., MkDocs)
-├── models                    <- Trained model artifacts and summaries
+├── models                    <- Trained model artifacts
 ├── notebooks                 <- Jupyter notebooks for exploration and analysis
-├── pyproject.toml            <- Package metadata and tool configuration (e.g., flake8)
-├── requirements.txt          <- Pin-file for Python dependencies
+├── pyproject.toml            <- Package metadata and tool configuration
+├── requirements.txt          
 └── match_forecast
     ├── __init__.py
     ├── config.py             <- Global constants and path definitions

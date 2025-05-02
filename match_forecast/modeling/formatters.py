@@ -168,25 +168,14 @@ def format_qda(params: Dict[str, Any]) -> Dict[str, Any]:
     """
     Format QDA parameters (e.g., n_components).
     """
-    params = format_common_int(params, ['n_components'])
-    return params
+    return format_common_int(params, ['n_components'])
 
 
 def format_gnb(params: Dict[str, Any], y_train: Optional[np.ndarray] = None) -> Dict[str, Any]:
     """
-    Format GaussianNB parameters, optionally computing priors if requested.
+    Format GaussianNB parameters.
     """
-    params = format_common_int(params, ['n_components'])
-    
-    # No n_components but handle learn_priors flag
-    if 'learn_priors' in params:
-        learn = bool(params.pop('learn_priors'))
-        if learn and y_train is not None:
-            n_classes = len(np.unique(y_train))
-            params['priors'] = [1.0 / n_classes] * n_classes
-        else:
-            params['priors'] = None
-    return params
+    return format_common_int(params, ['n_components'])
 
 
 def format_knn(params: Dict[str, Any]) -> Dict[str, Any]:
