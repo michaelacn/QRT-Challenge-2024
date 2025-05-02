@@ -1,10 +1,12 @@
 # QRT-Challenge-2024
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+### Setup with Python
 
-Challenge match forecast
+```bash
+python3 -m venv .myenv
+source .myenv/bin/activate
+pip install -r requirements.txt
+```
 
 ## Project Organization
 

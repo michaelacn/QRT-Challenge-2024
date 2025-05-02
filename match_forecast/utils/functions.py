@@ -107,21 +107,41 @@ def agg_positions(
     result = pivot.reset_index()
     return result
 
+
 def merge_and_select_metric(
     home_df: pd.DataFrame,
     away_df: pd.DataFrame,
     metric: str = "_average",
     id_col: str = "ID",
-    how: str = "inner"
+    how: str = "inner",
+    threshold: float = 0.5
 ) -> pd.DataFrame:
     """
     Merge home/away DataFrames on `id_col`, set that as the index,
-    and return only the columns whose names end with the given `metric`.
+    drop any numeric column with > threshold fraction of NaNs,
+    impute remaining numeric NaNs with the column median,
+    and return only the columns whose names *contain* the given `metric`.
     """
     merged = home_df.merge(away_df, on=id_col, how=how)
+
+    num_cols = merged.select_dtypes(include=[np.number]).columns
+    n_rows = len(merged)
+    sparse = [
+        c for c in num_cols
+        if merged[c].isna().sum() > threshold * n_rows
+    ]
+    merged = merged.drop(columns=sparse)
+
+    keep_nums = num_cols.difference(sparse)
+    if not keep_nums.empty:
+        medians = merged[keep_nums].median()
+        merged.loc[:, keep_nums] = merged[keep_nums].fillna(medians)
+
     if id_col in merged.columns:
         merged = merged.set_index(id_col)
+
     return merged.loc[:, merged.columns.str.contains(metric)]
+
 
 
 # =============================================================================

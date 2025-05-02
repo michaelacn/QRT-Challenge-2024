@@ -6,12 +6,22 @@ Defines:
   - Random seed and data split ratios
   - Feature conventions (suffixes, categorical columns)
   - Player-processing settings (position mapping, metadata columns)
-  - Available model names
+  - Model registry
   - Logging integration with tqdm
 """
 from pathlib import Path
 from dotenv import load_dotenv
 from loguru import logger
+
+# Model class registry
+from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier
+from xgboost import XGBClassifier
+from lightgbm import LGBMClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis, QuadraticDiscriminantAnalysis
+from sklearn.linear_model import LogisticRegression, SGDClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from catboost import CatBoostClassifier
 
 # Load environment variables from .env, if present
 load_dotenv()
@@ -37,7 +47,6 @@ TEST_SIZE           = 0.2
 
 # ─── Feature conventions ─────────────────────────────────────────────────────────
 NUMERIC_METRIC      = "_average"  # default suffix for numeric features
-CATEGORICAL_COLUMNS = ["POSITION"]
 
 # ─── Player processing settings ──────────────────────────────────────────────────
 # Map raw player POSITION values to broader groups
@@ -54,6 +63,21 @@ META_COLS_PLAYERS   = ['LEAGUE', 'TEAM_NAME', 'PLAYER_NAME']
 # ─── Model registry ─────────────────────────────────────────────────────────────
 # True  : apply StandardScaler -> PCA -> StandardScaler before training
 # False : no scaling/PCA needed
+
+MODEL_CLASSES = {
+    'rf': RandomForestClassifier,
+    'xt': ExtraTreesClassifier,
+    'xgb': XGBClassifier,
+    'lgb': LGBMClassifier,
+    'catboost': CatBoostClassifier,
+    'gnb': GaussianNB,
+    'lda': LinearDiscriminantAnalysis,
+    'qda': QuadraticDiscriminantAnalysis,
+    'logreg': LogisticRegression,
+    'knn': KNeighborsClassifier,
+    'sgdc': SGDClassifier,
+}
+
 PREPROCESSING_REQUIRED = {
     "rf":       False,
     "xt":       False,
@@ -62,6 +86,7 @@ PREPROCESSING_REQUIRED = {
     "catboost": False,
     "gnb":      True,
     "lda":      True,
+    "qda":      True,
     "logreg":   True,
     "knn":      True,
     "sgdc":     True,
